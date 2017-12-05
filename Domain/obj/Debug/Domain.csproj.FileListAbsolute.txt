@@ -1,0 +1,11 @@
+C:\Users\bakke\OneDrive\Documents\Visual Studio 2015\Projects\CGA\Domain\bin\Debug\Domain.dll.config
+C:\Users\bakke\OneDrive\Documents\Visual Studio 2015\Projects\CGA\Domain\bin\Debug\Domain.dll
+C:\Users\bakke\OneDrive\Documents\Visual Studio 2015\Projects\CGA\Domain\bin\Debug\Domain.pdb
+C:\Users\bakke\OneDrive\Documents\Visual Studio 2015\Projects\CGA\Domain\bin\Debug\EntityFramework.dll
+C:\Users\bakke\OneDrive\Documents\Visual Studio 2015\Projects\CGA\Domain\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\bakke\OneDrive\Documents\Visual Studio 2015\Projects\CGA\Domain\bin\Debug\MySql.Data.dll
+C:\Users\bakke\OneDrive\Documents\Visual Studio 2015\Projects\CGA\Domain\bin\Debug\MySql.Data.Entity.EF6.dll
+C:\Users\bakke\OneDrive\Documents\Visual Studio 2015\Projects\CGA\Domain\bin\Debug\EntityFramework.xml
+C:\Users\bakke\OneDrive\Documents\Visual Studio 2015\Projects\CGA\Domain\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\bakke\OneDrive\Documents\Visual Studio 2015\Projects\CGA\Domain\obj\Debug\Domain.dll
+C:\Users\bakke\OneDrive\Documents\Visual Studio 2015\Projects\CGA\Domain\obj\Debug\Domain.pdb

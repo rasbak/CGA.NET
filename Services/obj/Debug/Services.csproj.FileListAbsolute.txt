@@ -1,0 +1,16 @@
+C:\Users\bakke\OneDrive\Documents\Visual Studio 2015\Projects\CGA\Services\bin\Debug\Services.dll.config
+C:\Users\bakke\OneDrive\Documents\Visual Studio 2015\Projects\CGA\Services\bin\Debug\Services.dll
+C:\Users\bakke\OneDrive\Documents\Visual Studio 2015\Projects\CGA\Services\bin\Debug\Services.pdb
+C:\Users\bakke\OneDrive\Documents\Visual Studio 2015\Projects\CGA\Services\bin\Debug\Data.dll
+C:\Users\bakke\OneDrive\Documents\Visual Studio 2015\Projects\CGA\Services\bin\Debug\Domain.dll
+C:\Users\bakke\OneDrive\Documents\Visual Studio 2015\Projects\CGA\Services\bin\Debug\EntityFramework.dll
+C:\Users\bakke\OneDrive\Documents\Visual Studio 2015\Projects\CGA\Services\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\bakke\OneDrive\Documents\Visual Studio 2015\Projects\CGA\Services\bin\Debug\MySql.Data.dll
+C:\Users\bakke\OneDrive\Documents\Visual Studio 2015\Projects\CGA\Services\bin\Debug\MySql.Data.Entity.EF6.dll
+C:\Users\bakke\OneDrive\Documents\Visual Studio 2015\Projects\CGA\Services\bin\Debug\Data.pdb
+C:\Users\bakke\OneDrive\Documents\Visual Studio 2015\Projects\CGA\Services\bin\Debug\Domain.pdb
+C:\Users\bakke\OneDrive\Documents\Visual Studio 2015\Projects\CGA\Services\bin\Debug\EntityFramework.xml
+C:\Users\bakke\OneDrive\Documents\Visual Studio 2015\Projects\CGA\Services\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\bakke\OneDrive\Documents\Visual Studio 2015\Projects\CGA\Services\obj\Debug\Services.csprojResolveAssemblyReference.cache
+C:\Users\bakke\OneDrive\Documents\Visual Studio 2015\Projects\CGA\Services\obj\Debug\Services.dll
+C:\Users\bakke\OneDrive\Documents\Visual Studio 2015\Projects\CGA\Services\obj\Debug\Services.pdb

@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head id="j_idt2">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+            <meta name="apple-mobile-web-app-capable" content="yes" />
+            <meta name="theme-color" content="#03A9F4" /><link type="text/css" rel="stylesheet" href="/avalon/javax.faces.resource/theme.css.xhtml?ln=primefaces-avalon-blue" /><link type="text/css" rel="stylesheet" href="/avalon/javax.faces.resource/fa/font-awesome.css.xhtml?ln=primefaces&amp;v=6.1" /><link type="text/css" rel="stylesheet" href="/avalon/javax.faces.resource/components.css.xhtml;jsessionid=node0t1bya7r411rozhn6a48cil4f325930.node0?ln=primefaces&amp;v=6.1" /><script type="text/javascript" src="/avalon/javax.faces.resource/jquery/jquery.js.xhtml;jsessionid=node0t1bya7r411rozhn6a48cil4f325930.node0?ln=primefaces&amp;v=6.1"></script><script type="text/javascript" src="/avalon/javax.faces.resource/jquery/jquery-plugins.js.xhtml;jsessionid=node0t1bya7r411rozhn6a48cil4f325930.node0?ln=primefaces&amp;v=6.1"></script><script type="text/javascript" src="/avalon/javax.faces.resource/core.js.xhtml;jsessionid=node0t1bya7r411rozhn6a48cil4f325930.node0?ln=primefaces&amp;v=6.1"></script><script type="text/javascript" src="/avalon/javax.faces.resource/components.js.xhtml;jsessionid=node0t1bya7r411rozhn6a48cil4f325930.node0?ln=primefaces&amp;v=6.1"></script><link type="text/css" rel="stylesheet" href="/avalon/javax.faces.resource/schedule/schedule.css.xhtml;jsessionid=node0t1bya7r411rozhn6a48cil4f325930.node0?ln=primefaces&amp;v=6.1" /><script type="text/javascript" src="/avalon/javax.faces.resource/moment/moment.js.xhtml;jsessionid=node0t1bya7r411rozhn6a48cil4f325930.node0?ln=primefaces&amp;v=6.1"></script><script type="text/javascript" src="/avalon/javax.faces.resource/schedule/schedule.js.xhtml;jsessionid=node0t1bya7r411rozhn6a48cil4f325930.node0?ln=primefaces&amp;v=6.1"></script><link type="text/css" rel="stylesheet" href="/avalon/javax.faces.resource/css/nanoscroller.css.xhtml;jsessionid=node0t1bya7r411rozhn6a48cil4f325930.node0?ln=avalon-layout" /><link type="text/css" rel="stylesheet" href="/avalon/javax.faces.resource/css/animate.css.xhtml;jsessionid=node0t1bya7r411rozhn6a48cil4f325930.node0?ln=avalon-layout" /><link type="text/css" rel="stylesheet" href="/avalon/javax.faces.resource/css/layout-blue.css.xhtml;jsessionid=node0t1bya7r411rozhn6a48cil4f325930.node0?ln=avalon-layout" /><script type="text/javascript">if(window.PrimeFaces){PrimeFaces.settings.locale='en_US';PrimeFaces.settings.projectStage='Development';}</script>
+        <title>Dashboard</title><script type="text/javascript" src="/avalon/javax.faces.resource/js/nanoscroller.js.xhtml;jsessionid=node0t1bya7r411rozhn6a48cil4f325930.node0?ln=avalon-layout"></script><script type="text/javascript" src="/avalon/javax.faces.resource/js/layout.js.xhtml;jsessionid=node0t1bya7r411rozhn6a48cil4f325930.node0?ln=avalon-layout"></script></head><body>
+        
+        <div class="layout-wrapper menu-layout-static">
+
+    <div class="topbar clearfix">
+        <div class="topbar-left"><img id="j_idt12" src="/avalon/javax.faces.resource/images/logo.png.xhtml;jsessionid=node0t1bya7r411rozhn6a48cil4f325930.node0?ln=avalon-layout" alt="" class="topbar-logo" />
+        </div>
+        
+        <div class="topbar-right">
+            <a id="menu-button" href="#">
+                <i class="fa fa-angle-left"></i>
+            </a>
+            
+            <a id="topbar-menu-button" href="#">
+                <i class="fa fa-bars"></i>
+            </a>
+            <ul class="topbar-items fadeInDown animated">
+                <li>
+                    <a href="#">
+                        <i class="topbar-icon fa fa-fw fa-cog"></i>
+                        <span class="topbar-item-name">Settings</span>
+                    </a>
+                    <ul class="layout-menu animated">
+                        <li role="menuitem">
+                            <a href="#">
+                                <i class="fa fa-fw fa-paint-brush"></i>
+                                <span>Change Theme</span>
+                            </a>
+                        </li>
+                        <li role="menuitem">
+                            <a href="#">
+                                <i class="fa fa-fw fa-star-o"></i>
+                                <span>Favorites</span>
+                            </a>
+                        </li>
+                        <li role="menuitem">
+                            <a href="#">
+                                <i class="fa fa-fw fa-lock"></i>
+                                <span>Lock Screen</span>
+                            </a>
+                        </li>
+                        <li role="menuitem">
+                            <a href="#">
+                                <i class="fa fa-fw fa-picture-o"></i>
+                                <span>Wallpaper</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="topbar-icon animated swing fa fa-fw fa-envelope-o"></i>
+                        <span class="topbar-badge animated rubberBand">5</span>
+                        <span class="topbar-item-name">Messages</span>
+                    </a>
+                    <ul class="layout-menu animated">
+                        <li role="menuitem">
+                            <a href="#" class="topbar-message"><img id="j_idt19" src="/avalon/javax.faces.resource/images/avatar1.png.xhtml;jsessionid=node0t1bya7r411rozhn6a48cil4f325930.node0?ln=avalon-layout" alt="" width="35" />
+                                <span>Give me a call</span>
+                            </a>
+                        </li>
+                        <li role="menuitem">
+                            <a href="#" class="topbar-message"><img id="j_idt21" src="/avalon/javax.faces.resource/images/avatar2.png.xhtml;jsessionid=node0t1bya7r411rozhn6a48cil4f325930.node0?ln=avalon-layout" alt="" width="35" />
+                                <span>Sales reports attached</span>
+                            </a>
+                        </li>
+                        <li role="menuitem">
+                            <a href="#" class="topbar-message"><img id="j_idt23" src="/avalon/javax.faces.resource/images/avatar3.png.xhtml;jsessionid=node0t1bya7r411rozhn6a48cil4f325930.node0?ln=avalon-layout" alt="" width="35" />
+                                <span>About your invoice</span>
+                            </a>
+                        </li>
+                        <li role="menuitem">
+                            <a href="#" class="topbar-message"><img id="j_idt25" src="/avalon/javax.faces.resource/images/avatar2.png.xhtml;jsessionid=node0t1bya7r411rozhn6a48cil4f325930.node0?ln=avalon-layout" alt="" width="35" />
+                                <span>Meeting today at 10pm</span>
+                            </a>
+                        </li>
+                        <li role="menuitem">
+                            <a href="#" class="topbar-message"><img id="j_idt27" src="/avalon/javax.faces.resource/images/avatar4.png.xhtml;jsessionid=node0t1bya7r411rozhn6a48cil4f325930.node0?ln=avalon-layout" alt="" width="35" />
+                                <span>Out of office</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="topbar-icon fa fa-fw fa-bell-o"></i>
+                        <span class="topbar-badge animated rubberBand">4</span>
+                        <span class="topbar-item-name">Notifications</span>
+                    </a>
+                    <ul class="layout-menu animated">
+                        <li role="menuitem">
+                            <a href="#">
+                                <i class="fa fa-fw fa-tasks"></i>
+                                <span>Pending tasks</span>
+                            </a>
+                        </li>
+                        <li role="menuitem">
+                            <a href="#">
+                                <i class="fa fa-fw fa-calendar-check-o"></i>
+                                <span>Meeting today at 3pm</span>
+                            </a>
+                        </li>
+                        <li role="menuitem">
+                            <a href="#">
+                                <i class="fa fa-fw fa-download"></i>
+                                <span>Download documents</span>
+                            </a>
+                        </li>
+                        <li role="menuitem">
+                            <a href="#">
+                                <i class="fa fa-fw fa-plane"></i>
+                                <span>Book flight</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="search-item">
+                    <div class="topbar-search">
+                        <input type="text" placeholder="Search" />
+                        <i class="fa fa-search"></i>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+<form id="menuform" name="menuform" method="post" action="/avalon/dashboard.xhtml;jsessionid=node0t1bya7r411rozhn6a48cil4f325930.node0" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="menuform" value="menuform" />
+
+        <div class="layout-menu-container ">
+            <div class="nano">
+                <div class="nano-content menu-scroll-content">
+                        <div class="profile">
+                            <a id="profile-options" href="#"><img id="menuform:j_idt32" src="/avalon/javax.faces.resource/images/avatar.png.xhtml;jsessionid=node0t1bya7r411rozhn6a48cil4f325930.node0?ln=avalon-layout" alt="" class="profile-image" style="border: 0 none" />
+                                <span class="profile-name">Isabel Oliviera</span>
+                                <i class="fa fa-fw fa-caret-down"></i>
+                                <span class="profile-role">Marketing</span>
+                            </a>
+                        </div>
+
+                        <ul id="profile-menu" class="layout-menu">
+                            <li role="menuitem">
+                                <a href="#">
+                                    <i class="fa fa-fw fa-user"></i>
+                                    <span>Profile</span>
+                                </a>
+                                <div class="layout-menu-tooltip">
+                                    <div class="layout-menu-tooltip-arrow"></div>
+                                    <div class="layout-menu-tooltip-text">Profile</div>
+                                </div>
+                            </li>
+                            <li role="menuitem">
+                                <a href="#">
+                                    <i class="fa fa-fw fa-user-secret"></i>
+                                    <span>Privacy</span>
+                                </a>
+                                <div class="layout-menu-tooltip">
+                                    <div class="layout-menu-tooltip-arrow"></div>
+                                    <div class="layout-menu-tooltip-text">Privacy</div>
+                                </div>
+                            </li>
+                            <li role="menuitem">
+                                <a href="#">
+                                    <i class="fa fa-fw fa-cog"></i>
+                                    <span>Settings</span>
+                                </a>
+                                <div class="layout-menu-tooltip">
+                                    <div class="layout-menu-tooltip-arrow"></div>
+                                    <div class="layout-menu-tooltip-text">Settings</div>
+                                </div>
+                            </li>
+                            <li role="menuitem">
+                                <a href="#">
+                                    <i class="fa fa-fw fa-sign-out"></i>
+                                    <span>Logout</span>
+                                </a>
+                                <div class="layout-menu-tooltip">
+                                    <div class="layout-menu-tooltip-arrow"></div>
+                                    <div class="layout-menu-tooltip-text">Logout</div>
+                                </div>
+                            </li>
+                        </ul><ul id="menuform:j_idt34" class="layout-menu clearfix"><li id="menuform:om_dashboards" role="menuitem"><a href="#" class="ripplelink"><i class="fa fa-fw fa-dashboard"></i><span>Dashboards</span><span class="ink animate"></span><i class="fa fa-fw fa-angle-down menuitem-toggle-icon"></i></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Dashboards</div></div><ul role="menu"><li id="menuform:om_dashboard" role="menuitem"><a href="/avalon/dashboard.xhtml;jsessionid=node0t1bya7r411rozhn6a48cil4f325930.node0"><i class="fa fa-fw fa-home"></i><span>Generic</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Generic</div></div></li><li id="menuform:om_dashboard_banking" role="menuitem"><a href="/avalon/dashboard_banking.xhtml;jsessionid=node0t1bya7r411rozhn6a48cil4f325930.node0"><i class="fa fa-fw fa-bank"></i><span>Banking</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Banking</div></div></li></ul></li><li id="menuform:am_customization" role="menuitem"><a href="#" class="ripplelink"><i class="fa fa-fw fa-bars"></i><span>Customization</span><span class="ink animate"></span><i class="fa fa-fw fa-angle-down menuitem-toggle-icon"></i><span class="menuitem-badge">8</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Customization</div></div><ul role="menu"><li id="menuform:custom1" role="menuitem"><a href="#" onclick="PrimeFaces.addSubmitParam('menuform',{'menuform:custom1':'menuform:custom1'}).submit('menuform');return false;PrimeFaces.onPost();"><i class="fa fa-fw fa-bars"></i><span>Static Menu</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Static Menu</div></div></li><li id="menuform:custom2" role="menuitem"><a href="#" onclick="PrimeFaces.addSubmitParam('menuform',{'menuform:custom2':'menuform:custom2'}).submit('menuform');return false;PrimeFaces.onPost();"><i class="fa fa-fw fa-bars"></i><span>Overlay Menu</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Overlay Menu</div></div></li><li id="menuform:custom3" role="menuitem"><a href="#" onclick="PrimeFaces.addSubmitParam('menuform',{'menuform:custom3':'menuform:custom3'}).submit('menuform');return false;PrimeFaces.onPost();"><i class="fa fa-fw fa-bars"></i><span>Slim Menu</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Slim Menu</div></div></li><li id="menuform:custom4" role="menuitem"><a href="#" onclick="PrimeFaces.addSubmitParam('menuform',{'menuform:custom4':'menuform:custom4'}).submit('menuform');return false;PrimeFaces.onPost();"><i class="fa fa-fw fa-bars"></i><span>Horizontal Menu</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Horizontal Menu</div></div></li><li id="menuform:custom5" role="menuitem"><a href="#" onclick="PrimeFaces.addSubmitParam('menuform',{'menuform:custom5':'menuform:custom5'}).submit('menuform');return false;PrimeFaces.onPost();"><i class="fa fa-fw fa-user"></i><span>Inline Profile</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Inline Profile</div></div></li><li id="menuform:custom6" role="menuitem"><a href="#" onclick="PrimeFaces.addSubmitParam('menuform',{'menuform:custom6':'menuform:custom6'}).submit('menuform');return false;PrimeFaces.onPost();"><i class="fa fa-fw fa-user-circle"></i><span>Top Profile</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Top Profile</div></div></li><li id="menuform:custom7" role="menuitem"><a href="#" onclick="PrimeFaces.addSubmitParam('menuform',{'menuform:custom7':'menuform:custom7'}).submit('menuform');return false;PrimeFaces.onPost();"><i class="fa fa-fw fa-square-o"></i><span>Light Menu</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Light Menu</div></div></li><li id="menuform:custom8" role="menuitem"><a href="#" onclick="PrimeFaces.addSubmitParam('menuform',{'menuform:custom8':'menuform:custom8'}).submit('menuform');return false;PrimeFaces.onPost();"><i class="fa fa-fw fa-square"></i><span>Dark Menu</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Dark Menu</div></div></li></ul></li><li id="menuform:am_layout" role="menuitem"><a href="#" class="ripplelink"><i class="fa fa-fw fa-fire"></i><span>Layout Colors</span><span class="ink animate"></span><i class="fa fa-fw fa-angle-down menuitem-toggle-icon"></i></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Layout Colors</div></div><ul role="menu"><li id="menuform:am_layout_flat" role="menuitem"><a href="#" class="ripplelink"><i class="fa fa-fw fa-square-o"></i><span>Flat</span><span class="ink animate"></span><i class="fa fa-fw fa-angle-down menuitem-toggle-icon"></i></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Flat</div></div><ul role="menu"><li id="menuform:am_layout_flat_1" role="menuitem"><a href="#" onclick="PrimeFaces.addSubmitParam('menuform',{'menuform:am_layout_flat_1':'menuform:am_layout_flat_1'}).submit('menuform');return false;PrimeFaces.onPost();"><i class="fa fa-fw fa-paint-brush"></i><span>Blue</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Blue</div></div></li><li id="menuform:am_layout_flat_2" role="menuitem"><a href="#" onclick="PrimeFaces.addSubmitParam('menuform',{'menuform:am_layout_flat_2':'menuform:am_layout_flat_2'}).submit('menuform');return false;PrimeFaces.onPost();"><i class="fa fa-fw fa-paint-brush"></i><span>Cyan</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Cyan</div></div></li><li id="menuform:am_layout_flat_3" role="menuitem"><a href="#" onclick="PrimeFaces.addSubmitParam('menuform',{'menuform:am_layout_flat_3':'menuform:am_layout_flat_3'}).submit('menuform');return false;PrimeFaces.onPost();"><i class="fa fa-fw fa-paint-brush"></i><span>Indigo</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Indigo</div></div></li><li id="menuform:am_layout_flat_4" role="menuitem"><a href="#" onclick="PrimeFaces.addSubmitParam('menuform',{'menuform:am_layout_flat_4':'menuform:am_layout_flat_4'}).submit('menuform');return false;PrimeFaces.onPost();"><i class="fa fa-fw fa-paint-brush"></i><span>Purple</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Purple</div></div></li><li id="menuform:am_layout_flat_5" role="menuitem"><a href="#" onclick="PrimeFaces.addSubmitParam('menuform',{'menuform:am_layout_flat_5':'menuform:am_layout_flat_5'}).submit('menuform');return false;PrimeFaces.onPost();"><i class="fa fa-fw fa-paint-brush"></i><span>Teal</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Teal</div></div></li><li id="menuform:am_layout_flat_6" role="menuitem"><a href="#" onclick="PrimeFaces.addSubmitParam('menuform',{'menuform:am_layout_flat_6':'menuform:am_layout_flat_6'}).submit('menuform');return false;PrimeFaces.onPost();"><i class="fa fa-fw fa-paint-brush"></i><span>Pink</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Pink</div></div></li><li id="menuform:am_layout_flat_7" role="menuitem"><a href="#" onclick="PrimeFaces.addSubmitParam('menuform',{'menuform:am_layout_flat_7':'menuform:am_layout_flat_7'}).submit('menuform');return false;PrimeFaces.onPost();"><i class="fa fa-fw fa-paint-brush"></i><span>Lime</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Lime</div></div></li><li id="menuform:am_layout_flat_8" role="menuitem"><a href="#" onclick="PrimeFaces.addSubmitParam('menuform',{'menuform:am_layout_flat_8':'menuform:am_layout_flat_8'}).submit('menuform');return false;PrimeFaces.onPost();"><i class="fa fa-fw fa-paint-brush"></i><span>Green</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Green</div></div></li><li id="menuform:am_layout_flat_9" role="menuitem"><a href="#" onclick="PrimeFaces.addSubmitParam('menuform',{'menuform:am_layout_flat_9':'menuform:am_layout_flat_9'}).submit('menuform');return false;PrimeFaces.onPost();"><i class="fa fa-fw fa-paint-brush"></i><span>Amber</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Amber</div></div></li><li id="menuform:am_layout_flat_10" role="menuitem"><a href="#" onclick="PrimeFaces.addSubmitParam('menuform',{'menuform:am_layout_flat_10':'menuform:am_layout_flat_10'}).submit('menuform');return false;PrimeFaces.onPost();"><i class="fa fa-fw fa-paint-brush"></i><span>Dark Grey</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Dark Grey</div></div></li></ul></li><li id="menuform:am_layout_special" role="menuitem"><a href="#" class="ripplelink"><i class="fa fa-fw fa-square"></i><span>Special</span><span class="ink animate"></span><i class="fa fa-fw fa-angle-down menuitem-toggle-icon"></i></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Special</div></div><ul role="menu"><li id="menuform:am_layout_special_1" role="menuitem"><a href="#" onclick="PrimeFaces.addSubmitParam('menuform',{'menuform:am_layout_special_1':'menuform:am_layout_special_1'}).submit('menuform');return false;PrimeFaces.onPost();"><i class="fa fa-fw fa-paint-brush"></i><span>Influenza</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Influenza</div></div></li><li id="menuform:am_layout_special_2" role="menuitem"><a href="#" onclick="PrimeFaces.addSubmitParam('menuform',{'menuform:am_layout_special_2':'menuform:am_layout_special_2'}).submit('menuform');return false;PrimeFaces.onPost();"><i class="fa fa-fw fa-paint-brush"></i><span>Calm</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Calm</div></div></li><li id="menuform:am_layout_special_3" role="menuitem"><a href="#" onclick="PrimeFaces.addSubmitParam('menuform',{'menuform:am_layout_special_3':'menuform:am_layout_special_3'}).submit('menuform');return false;PrimeFaces.onPost();"><i class="fa fa-fw fa-paint-brush"></i><span>Crimson</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Crimson</div></div></li><li id="menuform:am_layout_special_4" role="menuitem"><a href="#" onclick="PrimeFaces.addSubmitParam('menuform',{'menuform:am_layout_special_4':'menuform:am_layout_special_4'}).submit('menuform');return false;PrimeFaces.onPost();"><i class="fa fa-fw fa-paint-brush"></i><span>Night</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Night</div></div></li><li id="menuform:am_layout_special_5" role="menuitem"><a href="#" onclick="PrimeFaces.addSubmitParam('menuform',{'menuform:am_layout_special_5':'menuform:am_layout_special_5'}).submit('menuform');return false;PrimeFaces.onPost();"><i class="fa fa-fw fa-paint-brush"></i><span>Skyline</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Skyline</div></div></li><li id="menuform:am_layout_special_6" role="menuitem"><a href="#" onclick="PrimeFaces.addSubmitParam('menuform',{'menuform:am_layout_special_6':'menuform:am_layout_special_6'}).submit('menuform');return false;PrimeFaces.onPost();"><i class="fa fa-fw fa-paint-brush"></i><span>Sunkist</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Sunkist</div></div></li><li id="menuform:am_layout_special_7" role="menuitem"><a href="#" onclick="PrimeFaces.addSubmitParam('menuform',{'menuform:am_layout_special_7':'menuform:am_layout_special_7'}).submit('menuform');return false;PrimeFaces.onPost();"><i class="fa fa-fw fa-paint-brush"></i><span>Little Leaf</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Little Leaf</div></div></li><li id="menuform:am_layout_special_8" role="menuitem"><a href="#" onclick="PrimeFaces.addSubmitParam('menuform',{'menuform:am_layout_special_8':'menuform:am_layout_special_8'}).submit('menuform');return false;PrimeFaces.onPost();"><i class="fa fa-fw fa-paint-brush"></i><span>Joomla</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Joomla</div></div></li><li id="menuform:am_layout_special_9" role="menuitem"><a href="#" onclick="PrimeFaces.addSubmitParam('menuform',{'menuform:am_layout_special_9':'menuform:am_layout_special_9'}).submit('menuform');return false;PrimeFaces.onPost();"><i class="fa fa-fw fa-paint-brush"></i><span>Firewatch</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Firewatch</div></div></li><li id="menuform:am_layout_special_10" role="menuitem"><a href="#" onclick="PrimeFaces.addSubmitParam('menuform',{'menuform:am_layout_special_10':'menuform:am_layout_special_10'}).submit('menuform');return false;PrimeFaces.onPost();"><i class="fa fa-fw fa-paint-brush"></i><span>Suzy</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Suzy</div></div></li></ul></li></ul></li><li id="menuform:am_theme" role="menuitem"><a href="#" class="ripplelink"><i class="fa fa-fw fa-paint-brush"></i><span>Themes</span><span class="ink animate"></span><i class="fa fa-fw fa-angle-down menuitem-toggle-icon"></i><span class="menuitem-badge">5</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Themes</div></div><ul role="menu"><li id="menuform:theme1" role="menuitem"><a href="#" onclick="PrimeFaces.addSubmitParam('menuform',{'menuform:theme1':'menuform:theme1'}).submit('menuform');return false;PrimeFaces.onPost();"><i class="fa fa-fw fa-paint-brush"></i><span>Blue</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Blue</div></div></li><li id="menuform:theme2" role="menuitem"><a href="#" onclick="PrimeFaces.addSubmitParam('menuform',{'menuform:theme2':'menuform:theme2'}).submit('menuform');return false;PrimeFaces.onPost();"><i class="fa fa-fw fa-paint-brush"></i><span>Cyan</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Cyan</div></div></li><li id="menuform:theme3" role="menuitem"><a href="#" onclick="PrimeFaces.addSubmitParam('menuform',{'menuform:theme3':'menuform:theme3'}).submit('menuform');return false;PrimeFaces.onPost();"><i class="fa fa-fw fa-paint-brush"></i><span>Indigo</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Indigo</div></div></li><li id="menuform:theme4" role="menuitem"><a href="#" onclick="PrimeFaces.addSubmitParam('menuform',{'menuform:theme4':'menuform:theme4'}).submit('menuform');return false;PrimeFaces.onPost();"><i class="fa fa-fw fa-paint-brush"></i><span>Purple</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Purple</div></div></li><li id="menuform:theme5" role="menuitem"><a href="#" onclick="PrimeFaces.addSubmitParam('menuform',{'menuform:theme5':'menuform:theme5'}).submit('menuform');return false;PrimeFaces.onPost();"><i class="fa fa-fw fa-paint-brush"></i><span>Teal</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Teal</div></div></li><li id="menuform:theme6" role="menuitem"><a href="#" onclick="PrimeFaces.addSubmitParam('menuform',{'menuform:theme6':'menuform:theme6'}).submit('menuform');return false;PrimeFaces.onPost();"><i class="fa fa-fw fa-paint-brush"></i><span>Orange</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Orange</div></div></li><li id="menuform:theme7" role="menuitem"><a href="#" onclick="PrimeFaces.addSubmitParam('menuform',{'menuform:theme7':'menuform:theme7'}).submit('menuform');return false;PrimeFaces.onPost();"><i class="fa fa-fw fa-paint-brush"></i><span>Deep Purple</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Deep Purple</div></div></li><li id="menuform:theme8" role="menuitem"><a href="#" onclick="PrimeFaces.addSubmitParam('menuform',{'menuform:theme8':'menuform:theme8'}).submit('menuform');return false;PrimeFaces.onPost();"><i class="fa fa-fw fa-paint-brush"></i><span>Light Blue</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Light Blue</div></div></li><li id="menuform:theme9" role="menuitem"><a href="#" onclick="PrimeFaces.addSubmitParam('menuform',{'menuform:theme9':'menuform:theme9'}).submit('menuform');return false;PrimeFaces.onPost();"><i class="fa fa-fw fa-paint-brush"></i><span>Green</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Green</div></div></li><li id="menuform:theme10" role="menuitem"><a href="#" onclick="PrimeFaces.addSubmitParam('menuform',{'menuform:theme10':'menuform:theme10'}).submit('menuform');return false;PrimeFaces.onPost();"><i class="fa fa-fw fa-paint-brush"></i><span>Light Green</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Light Green</div></div></li><li id="menuform:theme11" role="menuitem"><a href="#" onclick="PrimeFaces.addSubmitParam('menuform',{'menuform:theme11':'menuform:theme11'}).submit('menuform');return false;PrimeFaces.onPost();"><i class="fa fa-fw fa-paint-brush"></i><span>Amber</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Amber</div></div></li><li id="menuform:theme12" role="menuitem"><a href="#" onclick="PrimeFaces.addSubmitParam('menuform',{'menuform:theme12':'menuform:theme12'}).submit('menuform');return false;PrimeFaces.onPost();"><i class="fa fa-fw fa-paint-brush"></i><span>Brown</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Brown</div></div></li><li id="menuform:theme13" role="menuitem"><a href="#" onclick="PrimeFaces.addSubmitParam('menuform',{'menuform:theme13':'menuform:theme13'}).submit('menuform');return false;PrimeFaces.onPost();"><i class="fa fa-fw fa-paint-brush"></i><span>Dark Grey</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Dark Grey</div></div></li></ul></li><li id="menuform:om_components" role="menuitem"><a href="#" class="ripplelink"><i class="fa fa-fw fa-sitemap"></i><span>Components</span><span class="ink animate"></span><i class="fa fa-fw fa-angle-down menuitem-toggle-icon"></i></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Components</div></div><ul role="menu"><li id="menuform:om_sample" role="menuitem"><a href="/avalon/sample.xhtml;jsessionid=node0t1bya7r411rozhn6a48cil4f325930.node0"><i class="fa fa-fw fa-columns"></i><span>Sample Page</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Sample Page</div></div></li><li id="menuform:om_forms" role="menuitem"><a href="/avalon/forms.xhtml;jsessionid=node0t1bya7r411rozhn6a48cil4f325930.node0"><i class="fa fa-fw fa-code"></i><span>Forms</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Forms</div></div></li><li id="menuform:om_data" role="menuitem"><a href="/avalon/data.xhtml;jsessionid=node0t1bya7r411rozhn6a48cil4f325930.node0"><i class="fa fa-fw fa-table"></i><span>Data</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Data</div></div></li><li id="menuform:om_panels" role="menuitem"><a href="/avalon/panel.xhtml;jsessionid=node0t1bya7r411rozhn6a48cil4f325930.node0"><i class="fa fa-fw fa-list-alt"></i><span>Panels</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Panels</div></div></li><li id="menuform:om_overlays" role="menuitem"><a href="/avalon/overlay.xhtml;jsessionid=node0t1bya7r411rozhn6a48cil4f325930.node0"><i class="fa fa-fw fa-square"></i><span>Overlays</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Overlays</div></div></li><li id="menuform:om_menus" role="menuitem"><a href="/avalon/menu.xhtml;jsessionid=node0t1bya7r411rozhn6a48cil4f325930.node0"><i class="fa fa-fw fa-minus-square-o"></i><span>Menus</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Menus</div></div></li><li id="menuform:om_messages" role="menuitem"><a href="/avalon/messages.xhtml;jsessionid=node0t1bya7r411rozhn6a48cil4f325930.node0"><i class="fa fa-fw fa-circle-o-notch"></i><span>Messages</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Messages</div></div></li><li id="menuform:om_charts" role="menuitem"><a href="/avalon/charts.xhtml;jsessionid=node0t1bya7r411rozhn6a48cil4f325930.node0"><i class="fa fa-fw fa-area-chart"></i><span>Charts</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Charts</div></div></li><li id="menuform:om_file" role="menuitem"><a href="/avalon/file.xhtml;jsessionid=node0t1bya7r411rozhn6a48cil4f325930.node0"><i class="fa fa-fw fa-arrow-circle-o-up"></i><span>File</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">File</div></div></li><li id="menuform:om_misc" role="menuitem"><a href="/avalon/misc.xhtml;jsessionid=node0t1bya7r411rozhn6a48cil4f325930.node0"><i class="fa fa-fw fa-user-secret"></i><span>Misc</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Misc</div></div></li></ul></li><li id="menuform:om_default" role="menuitem"><a href="#" class="ripplelink"><i class="fa fa-fw fa-life-saver"></i><span>Template Pages</span><span class="ink animate"></span><i class="fa fa-fw fa-angle-down menuitem-toggle-icon"></i></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Template Pages</div></div><ul role="menu"><li id="menuform:om_empty" role="menuitem"><a href="/avalon/empty.xhtml;jsessionid=node0t1bya7r411rozhn6a48cil4f325930.node0" target="_blank"><i class="fa fa-fw fa-square-o"></i><span>Empty Page</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Empty Page</div></div></li><li id="menuform:om_db_landing" role="menuitem"><a href="/avalon/landing.xhtml;jsessionid=node0t1bya7r411rozhn6a48cil4f325930.node0" target="_blank"><i class="fa fa-fw fa-certificate"></i><span>Landing</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Landing</div></div></li><li id="menuform:om_login" role="menuitem"><a href="/avalon/login.xhtml;jsessionid=node0t1bya7r411rozhn6a48cil4f325930.node0" target="_blank"><i class="fa fa-fw fa-sign-in"></i><span>Login Page</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Login Page</div></div></li><li id="menuform:om_error" role="menuitem"><a href="/avalon/error.xhtml;jsessionid=node0t1bya7r411rozhn6a48cil4f325930.node0" target="_blank"><i class="fa fa-fw fa-exclamation-circle"></i><span>Error Page</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Error Page</div></div></li><li id="menuform:om_404" role="menuitem"><a href="/avalon/404.xhtml;jsessionid=node0t1bya7r411rozhn6a48cil4f325930.node0" target="_blank"><i class="fa fa-fw fa-times"></i><span>404 Page</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">404 Page</div></div></li><li id="menuform:om_access" role="menuitem"><a href="/avalon/access.xhtml;jsessionid=node0t1bya7r411rozhn6a48cil4f325930.node0" target="_blank"><i class="fa fa-fw fa-exclamation-triangle"></i><span>Access Denied</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Access Denied</div></div></li></ul></li><li id="menuform:om_hierarchy" role="menuitem"><a href="#" class="ripplelink"><i class="fa fa-fw fa-gg"></i><span>Menu Hierarchy</span><span class="ink animate"></span><i class="fa fa-fw fa-angle-down menuitem-toggle-icon"></i></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Menu Hierarchy</div></div><ul role="menu"><li id="menuform:om_sm1" role="menuitem"><a href="#" class="ripplelink"><i class="fa fa-fw fa-sign-in"></i><span>Submenu 1</span><span class="ink animate"></span><i class="fa fa-fw fa-angle-down menuitem-toggle-icon"></i></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Submenu 1</div></div><ul role="menu"><li id="menuform:om_sm11" role="menuitem"><a href="#" class="ripplelink"><i class="fa fa-fw fa-sign-in"></i><span>Submenu 1.1</span><span class="ink animate"></span><i class="fa fa-fw fa-angle-down menuitem-toggle-icon"></i></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Submenu 1.1</div></div><ul role="menu"><li id="menuform:om_lnk111" role="menuitem"><a href=";jsessionid=node0t1bya7r411rozhn6a48cil4f325930.node0#"><i class="fa fa-fw fa-sign-in"></i><span>Link 1.1.1</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Link 1.1.1</div></div></li><li id="menuform:om_lnk112" role="menuitem"><a href=";jsessionid=node0t1bya7r411rozhn6a48cil4f325930.node0#"><i class="fa fa-fw fa-sign-in"></i><span>Link 1.1.2</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Link 1.1.2</div></div></li><li id="menuform:om_lnk113" role="menuitem"><a href=";jsessionid=node0t1bya7r411rozhn6a48cil4f325930.node0#"><i class="fa fa-fw fa-sign-in"></i><span>Link 1.1.3</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Link 1.1.3</div></div></li></ul></li><li id="menuform:om_sm12" role="menuitem"><a href="#" class="ripplelink"><i class="fa fa-fw fa-sign-in"></i><span>Submenu 1.2</span><span class="ink animate"></span><i class="fa fa-fw fa-angle-down menuitem-toggle-icon"></i></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Submenu 1.2</div></div><ul role="menu"><li id="menuform:om_lnk121" role="menuitem"><a href=";jsessionid=node0t1bya7r411rozhn6a48cil4f325930.node0#"><i class="fa fa-fw fa-sign-in"></i><span>Link 1.2.1</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Link 1.2.1</div></div></li></ul></li></ul></li><li id="menuform:om_sm2" role="menuitem"><a href="#" class="ripplelink"><i class="fa fa-fw fa-sign-in"></i><span>Submenu 2</span><span class="ink animate"></span><i class="fa fa-fw fa-angle-down menuitem-toggle-icon"></i></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Submenu 2</div></div><ul role="menu"><li id="menuform:om_sm21" role="menuitem"><a href="#" class="ripplelink"><i class="fa fa-fw fa-sign-in"></i><span>Submenu 2.1</span><span class="ink animate"></span><i class="fa fa-fw fa-angle-down menuitem-toggle-icon"></i></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Submenu 2.1</div></div><ul role="menu"><li id="menuform:om_lnk211" role="menuitem"><a href=";jsessionid=node0t1bya7r411rozhn6a48cil4f325930.node0#"><i class="fa fa-fw fa-sign-in"></i><span>Link 2.1.1</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Link 2.1.1</div></div></li><li id="menuform:om_lnk212" role="menuitem"><a href=";jsessionid=node0t1bya7r411rozhn6a48cil4f325930.node0#"><i class="fa fa-fw fa-sign-in"></i><span>Link 2.1.2</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Link 2.1.2</div></div></li></ul></li><li id="menuform:om_sm22" role="menuitem"><a href="#" class="ripplelink"><i class="fa fa-fw fa-sign-in"></i><span>Submenu 2.2</span><span class="ink animate"></span><i class="fa fa-fw fa-angle-down menuitem-toggle-icon"></i></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Submenu 2.2</div></div><ul role="menu"><li id="menuform:om_lnk221" role="menuitem"><a href=";jsessionid=node0t1bya7r411rozhn6a48cil4f325930.node0#"><i class="fa fa-fw fa-sign-in"></i><span>Link 2.2.1</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Link 2.2.1</div></div></li></ul></li></ul></li></ul></li><li id="menuform:om_doc" role="menuitem"><a href="/avalon/docs.xhtml;jsessionid=node0t1bya7r411rozhn6a48cil4f325930.node0"><i class="fa fa-fw fa-book"></i><span>Documentation</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Documentation</div></div></li></ul><script id="menuform:j_idt34_s" type="text/javascript">PrimeFaces.cw("Avalon","me",{id:"menuform:j_idt34"});</script>
+                </div>
+            </div>
+        </div><input type="hidden" name="javax.faces.ViewState" id="j_id1:javax.faces.ViewState:0" value="-3784561211329516746:549984700397083665" autocomplete="off" />
+</form>
+            
+            <div class="layout-main">
+        <div class="dashboard">
+            <div class="ui-g overview-boxes">
+                <div class="ui-g-12 ui-md-6 ui-lg-3">
+                    <div class="ui-g overview-box overview-box-1">
+                        <div class="overview-box-title">
+                            <i class="fa fa-inbox"></i>
+                            <span>Unread Messages</span>
+                        </div>
+                        <div class="overview-box-count">150</div>
+                        <div class="overview-box-stats">12 less than yesterday</div>
+                    </div>
+                </div>
+                <div class="ui-g-12 ui-md-6 ui-lg-3">
+                    <div class="ui-g overview-box overview-box-2">
+                        <div class="overview-box-title">
+                            <i class="fa fa-map-pin"></i>
+                            <span>Check-ins</span>
+                        </div>
+                        <div class="overview-box-count">532</div>
+                        <div class="overview-box-stats">46 more than yesterday</div>
+                    </div>
+                </div>
+                <div class="ui-g-12 ui-md-6 ui-lg-3">
+                    <div class="ui-g overview-box overview-box-3">
+                        <div class="overview-box-title">
+                            <i class="fa fa-folder"></i>
+                            <span>Files</span>
+                        </div>
+                        <div class="overview-box-count">450</div>
+                        <div class="overview-box-stats">30 more than yesterday</div>
+                    </div>
+                </div>
+                <div class="ui-g-12 ui-md-6 ui-lg-3">
+                    <div class="ui-g overview-box overview-box-4">
+                        <div class="overview-box-title">
+                            <i class="fa fa-user"></i>
+                            <span>Users</span>
+                        </div>
+                        <div class="overview-box-count">532</div>
+                        <div class="overview-box-stats">250 more than yesterday</div>
+                    </div>
+                </div>
+            </div>
+                
+            <div class="ui-g">
+                <div class="ui-g-12 ui-lg-6 global-sales"><div id="j_idt38" class="ui-panel ui-widget ui-widget-content ui-corner-all" data-widget="widget_j_idt38"><div id="j_idt38_header" class="ui-panel-titlebar ui-widget-header ui-helper-clearfix ui-corner-all"><span class="ui-panel-title">
+                            <i class="fa fa-globe"></i>
+                            <span>Global Sales</span></span></div><div id="j_idt38_content" class="ui-panel-content ui-widget-content">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th>Total Sales</th>
+                                    <th>Change</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td><img id="j_idt41" src="/avalon/javax.faces.resource/images/dashboard/flag-brazil.png.xhtml;jsessionid=node0t1bya7r411rozhn6a48cil4f325930.node0?ln=avalon-layout" alt="" width="45" /></td>
+                                    <td>BRAZIL</td>
+                                    <td>4234</td>
+                                    <td>+35%</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td><img id="j_idt43" src="/avalon/javax.faces.resource/images/dashboard/flag-china.png.xhtml;jsessionid=node0t1bya7r411rozhn6a48cil4f325930.node0?ln=avalon-layout" alt="" width="45" /></td>
+                                    <td>CHINA</td>
+                                    <td>3214</td>
+                                    <td>-25%</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td><img id="j_idt45" src="/avalon/javax.faces.resource/images/dashboard/flag-belgium.png.xhtml;jsessionid=node0t1bya7r411rozhn6a48cil4f325930.node0?ln=avalon-layout" alt="" width="45" /></td>
+                                    <td>BELGIUM</td>
+                                    <td>2842</td>
+                                    <td>+28%</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td><img id="j_idt47" src="/avalon/javax.faces.resource/images/dashboard/flag-france.png.xhtml;jsessionid=node0t1bya7r411rozhn6a48cil4f325930.node0?ln=avalon-layout" alt="" width="45" /></td>
+                                    <td>FRANCE</td>
+                                    <td>1942</td>
+                                    <td>+15%</td>
+                                </tr>
+                            </tbody>
+                        </table></div></div><script id="j_idt38_s" type="text/javascript">PrimeFaces.cw("Panel","widget_j_idt38",{id:"j_idt38"});</script>
+                </div>
+                
+                <div class="ui-g-12 ui-lg-6 product-statistics"><div id="j_idt50" class="ui-panel ui-widget ui-widget-content ui-corner-all" data-widget="widget_j_idt50"><div id="j_idt50_header" class="ui-panel-titlebar ui-widget-header ui-helper-clearfix ui-corner-all"><span class="ui-panel-title">
+                            <i class="fa fa-line-chart"></i>
+                            <span>Product Statistics</span></span></div><div id="j_idt50_content" class="ui-panel-content ui-widget-content">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td class="col-overview col-wait">
+                                        <div>W</div>
+                                    </td>
+                                    <td class="col-status">
+                                        <span class="status-time">Last Update: 12m ago</span>
+                                        <span class="status-text">Currently Waiting</span>
+                                    </td>
+                                    <td class="col-numbers">
+                                        <div>253 <span>Shipments</span></div>
+                                        <div>58 <span>Orders</span></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-overview col-success">
+                                        <div>S</div>
+                                    </td>
+                                    <td class="col-status">
+                                        <span class="status-time">Last Update: 12m ago</span>
+                                        <span class="status-text">Successfully Completed</span>
+                                    </td>
+                                    <td class="col-numbers">
+                                        <div>312 <span>Shipments</span></div>
+                                        <div>409 <span>Orders</span></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-overview col-delay">
+                                        <div>D</div>
+                                    </td>
+                                    <td class="col-status">
+                                        <span class="status-time">Last Update: 6m ago</span>
+                                        <span class="status-text">Delayed</span>
+                                    </td>
+                                    <td class="col-numbers">
+                                        <div>12 <span>Shipments</span></div>
+                                        <div>31 <span>Orders</span></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-overview col-preorder">
+                                        <div>P</div>
+                                    </td>
+                                    <td class="col-status">
+                                        <span class="status-time">Last Update: 15m ago</span>
+                                        <span class="status-text">Preordered</span>
+                                    </td>
+                                    <td class="col-numbers">
+                                        <div>21 <span>Shipments</span></div>
+                                        <div>3 <span>Orders</span></div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table></div></div><script id="j_idt50_s" type="text/javascript">PrimeFaces.cw("Panel","widget_j_idt50",{id:"j_idt50"});</script>
+                </div>
+            </div>
+                
+            <div class="ui-g">
+                <div class="ui-g-12 graphs">
+                    <div class="ui-g">
+                        <div class="ui-g-12 ui-lg-4">
+                            <div class="graph">
+                                <div class="ui-g">
+                                    <div class="ui-g-4">
+                                        <span class="graph-title">Logins</span>
+                                        <span class="graph-value">52003</span>
+                                        <span class="graph-change">+32</span>
+                                    </div>
+                                    <div class="ui-g-8"><img id="j_idt54" src="/avalon/javax.faces.resource/images/dashboard/graph-1.svg.xhtml;jsessionid=node0t1bya7r411rozhn6a48cil4f325930.node0?ln=avalon-layout" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui-g-12 ui-lg-4">
+                            <div class="graph">
+                                <div class="ui-g">
+                                    <div class="ui-g-4">
+                                        <span class="graph-title">Views</span>
+                                        <span class="graph-value">532</span>
+                                        <span class="graph-change">+24792</span>
+                                    </div>
+                                    <div class="ui-g-8"><img id="j_idt56" src="/avalon/javax.faces.resource/images/dashboard/graph-2.svg.xhtml;jsessionid=node0t1bya7r411rozhn6a48cil4f325930.node0?ln=avalon-layout" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui-g-12 ui-lg-4">
+                            <div class="graph">
+                                <div class="ui-g">
+                                    <div class="ui-g-4">
+                                        <span class="graph-title">Sales</span>
+                                        <span class="graph-value">$5521</span>
+                                        <span class="graph-change">+243</span>
+                                    </div>
+                                    <div class="ui-g-8"><img id="j_idt58" src="/avalon/javax.faces.resource/images/dashboard/graph-3.svg.xhtml;jsessionid=node0t1bya7r411rozhn6a48cil4f325930.node0?ln=avalon-layout" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                
+            <div class="ui-g">
+                <div class="ui-g-12 ui-md-6 ui-lg-4 task-list"><div id="j_idt60" class="ui-panel ui-widget ui-widget-content ui-corner-all" data-widget="widget_j_idt60"><div id="j_idt60_header" class="ui-panel-titlebar ui-widget-header ui-helper-clearfix ui-corner-all"><span class="ui-panel-title">Tasks</span></div><div id="j_idt60_content" class="ui-panel-content ui-widget-content">
+                        <ul>
+                            <li><div id="j_idt62" class="ui-chkbox ui-widget"><div class="ui-helper-hidden-accessible"><input id="j_idt62_input" name="j_idt62_input" type="checkbox" autocomplete="off" aria-checked="false" /></div><div class="ui-chkbox-box ui-widget ui-corner-all ui-state-default"><span class="ui-chkbox-icon ui-icon ui-icon-blank ui-c"></span></div></div><script id="j_idt62_s" type="text/javascript">PrimeFaces.cw("SelectBooleanCheckbox","widget_j_idt62",{id:"j_idt62"});</script>
+                                <span class="task-name">Sales Reports</span>
+                                <i class="fa fa-briefcase"></i>
+                            </li>
+                            <li><div id="j_idt64" class="ui-chkbox ui-widget"><div class="ui-helper-hidden-accessible"><input id="j_idt64_input" name="j_idt64_input" type="checkbox" autocomplete="off" aria-checked="false" /></div><div class="ui-chkbox-box ui-widget ui-corner-all ui-state-default"><span class="ui-chkbox-icon ui-icon ui-icon-blank ui-c"></span></div></div><script id="j_idt64_s" type="text/javascript">PrimeFaces.cw("SelectBooleanCheckbox","widget_j_idt64",{id:"j_idt64"});</script>
+                                <span class="task-name">Pay Invoices</span>
+                                <i class="fa fa-credit-card"></i>
+                            </li>
+                            <li><div id="j_idt66" class="ui-chkbox ui-widget"><div class="ui-helper-hidden-accessible"><input id="j_idt66_input" name="j_idt66_input" type="checkbox" autocomplete="off" aria-checked="false" /></div><div class="ui-chkbox-box ui-widget ui-corner-all ui-state-default"><span class="ui-chkbox-icon ui-icon ui-icon-blank ui-c"></span></div></div><script id="j_idt66_s" type="text/javascript">PrimeFaces.cw("SelectBooleanCheckbox","widget_j_idt66",{id:"j_idt66"});</script>
+                                <span class="task-name">Dinner with Tony</span>
+                                <i class="fa fa-cutlery"></i>
+                            </li>
+                            <li><div id="j_idt68" class="ui-chkbox ui-widget"><div class="ui-helper-hidden-accessible"><input id="j_idt68_input" name="j_idt68_input" type="checkbox" autocomplete="off" aria-checked="false" /></div><div class="ui-chkbox-box ui-widget ui-corner-all ui-state-default"><span class="ui-chkbox-icon ui-icon ui-icon-blank ui-c"></span></div></div><script id="j_idt68_s" type="text/javascript">PrimeFaces.cw("SelectBooleanCheckbox","widget_j_idt68",{id:"j_idt68"});</script>
+                                <span class="task-name">Client Meeting</span>
+                                <i class="fa fa-user"></i>
+                            </li>
+                            <li><div id="j_idt70" class="ui-chkbox ui-widget"><div class="ui-helper-hidden-accessible"><input id="j_idt70_input" name="j_idt70_input" type="checkbox" autocomplete="off" aria-checked="false" /></div><div class="ui-chkbox-box ui-widget ui-corner-all ui-state-default"><span class="ui-chkbox-icon ui-icon ui-icon-blank ui-c"></span></div></div><script id="j_idt70_s" type="text/javascript">PrimeFaces.cw("SelectBooleanCheckbox","widget_j_idt70",{id:"j_idt70"});</script>
+                                <span class="task-name">New Theme</span>
+                                <i class="fa fa-paint-brush"></i>
+                            </li>
+                            <li><div id="j_idt72" class="ui-chkbox ui-widget"><div class="ui-helper-hidden-accessible"><input id="j_idt72_input" name="j_idt72_input" type="checkbox" autocomplete="off" aria-checked="false" /></div><div class="ui-chkbox-box ui-widget ui-corner-all ui-state-default"><span class="ui-chkbox-icon ui-icon ui-icon-blank ui-c"></span></div></div><script id="j_idt72_s" type="text/javascript">PrimeFaces.cw("SelectBooleanCheckbox","widget_j_idt72",{id:"j_idt72"});</script>
+                                <span class="task-name">Flight Ticket</span>
+                                <i class="fa fa-fighter-jet"></i>
+                            </li>
+                            <li><div id="j_idt74" class="ui-chkbox ui-widget"><div class="ui-helper-hidden-accessible"><input id="j_idt74_input" name="j_idt74_input" type="checkbox" autocomplete="off" aria-checked="false" /></div><div class="ui-chkbox-box ui-widget ui-corner-all ui-state-default"><span class="ui-chkbox-icon ui-icon ui-icon-blank ui-c"></span></div></div><script id="j_idt74_s" type="text/javascript">PrimeFaces.cw("SelectBooleanCheckbox","widget_j_idt74",{id:"j_idt74"});</script>
+                                <span class="task-name">Generate Charts</span>
+                                <i class="fa fa-area-chart"></i>
+                            </li>
+                            <li><div id="j_idt76" class="ui-chkbox ui-widget"><div class="ui-helper-hidden-accessible"><input id="j_idt76_input" name="j_idt76_input" type="checkbox" autocomplete="off" aria-checked="false" /></div><div class="ui-chkbox-box ui-widget ui-corner-all ui-state-default"><span class="ui-chkbox-icon ui-icon ui-icon-blank ui-c"></span></div></div><script id="j_idt76_s" type="text/javascript">PrimeFaces.cw("SelectBooleanCheckbox","widget_j_idt76",{id:"j_idt76"});</script>
+                                <span class="task-name">Call Client</span>
+                                <i class="fa fa-phone"></i>
+                            </li>
+                        </ul></div></div><script id="j_idt60_s" type="text/javascript">PrimeFaces.cw("Panel","widget_j_idt60",{id:"j_idt60"});</script>
+                </div>
+                <div class="ui-g-12 ui-md-6 ui-lg-4 ui-fluid contact-form"><div id="j_idt79" class="ui-panel ui-widget ui-widget-content ui-corner-all" data-widget="widget_j_idt79"><div id="j_idt79_header" class="ui-panel-titlebar ui-widget-header ui-helper-clearfix ui-corner-all"><span class="ui-panel-title">Message</span></div><div id="j_idt79_content" class="ui-panel-content ui-widget-content">
+                        <div class="ui-g">
+                            <div class="ui-g-12"><div id="console" class="ui-selectonemenu ui-widget ui-state-default ui-corner-all"><div class="ui-helper-hidden-accessible"><input id="console_focus" name="console_focus" type="text" autocomplete="off" role="combobox" aria-haspopup="true" aria-expanded="false" /></div><div class="ui-helper-hidden-accessible"><select id="console_input" name="console_input" tabindex="-1" aria-hidden="true"><option value="">Select One</option><option value="Xbox One">Xbox One</option><option value="PS4">PS4</option><option value="Wii U">Wii U</option></select></div><label id="console_label" class="ui-selectonemenu-label ui-inputfield ui-corner-all"></label><div class="ui-selectonemenu-trigger ui-state-default ui-corner-right"><span class="ui-icon ui-icon-triangle-1-s ui-c"></span></div><div id="console_panel" class="ui-selectonemenu-panel ui-widget ui-widget-content ui-corner-all ui-helper-hidden ui-shadow"><div class="ui-selectonemenu-items-wrapper" style="height:auto"><ul id="console_items" class="ui-selectonemenu-items ui-selectonemenu-list ui-widget-content ui-widget ui-corner-all ui-helper-reset" role="listbox"><li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all" data-label="Select One" tabindex="-1" role="option">Select One</li><li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all" data-label="Xbox One" tabindex="-1" role="option">Xbox One</li><li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all" data-label="PS4" tabindex="-1" role="option">PS4</li><li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all" data-label="Wii U" tabindex="-1" role="option">Wii U</li></ul></div></div></div><script id="console_s" type="text/javascript">$(function(){PrimeFaces.cw("SelectOneMenu","widget_console",{id:"console",autoWidth:false});});</script>
+                            </div>
+                            <div class="ui-g-12"><input id="j_idt86" name="j_idt86" type="text" placeholder="Name" class="ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all" /><script id="j_idt86_s" type="text/javascript">PrimeFaces.cw("InputText","widget_j_idt86",{id:"j_idt86"});</script>
+                            </div>
+                            <div class="ui-g-12"><input id="j_idt88" name="j_idt88" type="text" placeholder="Email" class="ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all" /><script id="j_idt88_s" type="text/javascript">PrimeFaces.cw("InputText","widget_j_idt88",{id:"j_idt88"});</script>
+                            </div>
+                            <div class="ui-g-12"><input id="j_idt90" name="j_idt90" type="text" placeholder="Location" class="ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all" /><script id="j_idt90_s" type="text/javascript">PrimeFaces.cw("InputText","widget_j_idt90",{id:"j_idt90"});</script>
+                            </div>
+                            <div class="ui-g-12"><textarea id="j_idt92" name="j_idt92" cols="5" rows="3" placeholder="Message" maxlength="2147483647" class="ui-inputfield ui-inputtextarea ui-widget ui-state-default ui-corner-all"></textarea><script id="j_idt92_s" type="text/javascript">$(function(){PrimeFaces.cw("InputTextarea","widget_j_idt92",{id:"j_idt92",autoResize:false});});</script>
+                            </div>
+                            <div class="ui-g-12"><button id="j_idt94" name="j_idt94" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon-left" type="button"><span class="ui-button-icon-left ui-icon ui-c fa fa-paper-plane-o"></span><span class="ui-button-text ui-c">Send</span></button><script id="j_idt94_s" type="text/javascript">PrimeFaces.cw("CommandButton","widget_j_idt94",{id:"j_idt94"});</script>
+                            </div>
+                        </div></div></div><script id="j_idt79_s" type="text/javascript">PrimeFaces.cw("Panel","widget_j_idt79",{id:"j_idt79"});</script>
+                </div>
+                <div class="ui-g-12 ui-lg-4 contacts"><div id="j_idt97" class="ui-panel ui-widget ui-widget-content ui-corner-all" data-widget="widget_j_idt97"><div id="j_idt97_header" class="ui-panel-titlebar ui-widget-header ui-helper-clearfix ui-corner-all"><span class="ui-panel-title">Contacts</span></div><div id="j_idt97_content" class="ui-panel-content ui-widget-content">
+                        <ul>
+                            <li class="clearfix"><img id="j_idt99" src="/avalon/javax.faces.resource/images/avatar.png.xhtml;jsessionid=node0t1bya7r411rozhn6a48cil4f325930.node0?ln=avalon-layout" alt="" width="45" />
+                                <div class="contact-info">
+                                    <span class="name">Isabel Oliviera (me)</span>
+                                    <span class="location">isabel@pf-avalon.com</span>
+                                </div>
+                                <div class="contact-actions">
+                                    <span class="connection-status online">online</span>
+                                    <i class="fa fa-paper-plane-o"></i>
+                                    <i class="fa fa-phone"></i>
+                                </div>
+                            </li>
+                            <li class="clearfix"><img id="j_idt101" src="/avalon/javax.faces.resource/images/avatar1.png.xhtml;jsessionid=node0t1bya7r411rozhn6a48cil4f325930.node0?ln=avalon-layout" alt="" width="45" />
+                                <div class="contact-info">
+                                    <span class="name">Joshua Williams</span>
+                                    <span class="location">joshua@pf-avalon.com</span>
+                                </div>
+                                <div class="contact-actions">
+                                    <span class="connection-status online">online</span>
+                                    <i class="fa fa-paper-plane-o"></i>
+                                    <i class="fa fa-phone"></i>
+                                </div>
+                            </li>
+                            <li class="clearfix"><img id="j_idt103" src="/avalon/javax.faces.resource/images/avatar2.png.xhtml;jsessionid=node0t1bya7r411rozhn6a48cil4f325930.node0?ln=avalon-layout" alt="" width="45" />
+                                <div class="contact-info">
+                                    <span class="name">Emily Clark</span>
+                                    <span class="location">emily@pf-avalon.com</span>
+                                </div>
+                                <div class="contact-actions">
+                                    <span class="connection-status offline">offline</span>
+                                    <i class="fa fa-paper-plane-o"></i>
+                                    <i class="fa fa-phone"></i>
+                                </div>
+                            </li>
+                            <li class="clearfix"><img id="j_idt105" src="/avalon/javax.faces.resource/images/avatar3.png.xhtml;jsessionid=node0t1bya7r411rozhn6a48cil4f325930.node0?ln=avalon-layout" alt="" width="45" />
+                                <div class="contact-info">
+                                    <span class="name">Tim Johnson</span>
+                                    <span class="location">tim@pf-avalon.com</span>
+                                </div>
+                                <div class="contact-actions">
+                                    <span class="connection-status online">online</span>
+                                    <i class="fa fa-paper-plane-o"></i>
+                                    <i class="fa fa-phone"></i>
+                                </div>
+                            </li>
+                            <li class="clearfix"><img id="j_idt107" src="/avalon/javax.faces.resource/images/avatar4.png.xhtml;jsessionid=node0t1bya7r411rozhn6a48cil4f325930.node0?ln=avalon-layout" alt="" width="45" />
+                                <div class="contact-info">
+                                    <span class="name">David Stark</span>
+                                    <span class="location">kelly@pf-avalon.com</span>
+                                </div>
+                                <div class="contact-actions">
+                                    <span class="connection-status offline">offline</span>
+                                    <i class="fa fa-paper-plane-o"></i>
+                                    <i class="fa fa-phone"></i>
+                                </div>
+                            </li>
+                        </ul></div></div><script id="j_idt97_s" type="text/javascript">PrimeFaces.cw("Panel","widget_j_idt97",{id:"j_idt97"});</script>
+                </div>
+            </div>
+            
+            <div class="ui-g">
+                <div class="ui-g-12 ui-lg-8 chat"><div id="j_idt110" class="ui-panel ui-widget ui-widget-content ui-corner-all nopad" data-widget="widget_j_idt110"><div id="j_idt110_header" class="ui-panel-titlebar ui-widget-header ui-helper-clearfix ui-corner-all"><span class="ui-panel-title">Chat</span></div><div id="j_idt110_content" class="ui-panel-content ui-widget-content">
+                        <ul>
+                            <li class="clearfix message-from"><img id="j_idt112" src="/avalon/javax.faces.resource/images/avatar2.png.xhtml;jsessionid=node0t1bya7r411rozhn6a48cil4f325930.node0?ln=avalon-layout" alt="" />
+                                <span>Retro occupy organic, stumptown shabby chic pour-over roof party DIY normcore.</span>
+                            </li>
+                            <li class="clearfix message-own"><img id="j_idt114" src="/avalon/javax.faces.resource/images/avatar.png.xhtml;jsessionid=node0t1bya7r411rozhn6a48cil4f325930.node0?ln=avalon-layout" alt="" />
+                                <span>Actually artisan organic occupy, Wes Anderson ugh whatever pour-over gastropub selvage.</span>
+                            </li>
+                            <li class="clearfix message-from"><img id="j_idt116" src="/avalon/javax.faces.resource/images/avatar2.png.xhtml;jsessionid=node0t1bya7r411rozhn6a48cil4f325930.node0?ln=avalon-layout" alt="" />
+                                <span>Chillwave craft beer tote bag stumptown quinoa hashtag.</span>
+                            </li>
+                            <li class="clearfix message-own"><img id="j_idt118" src="/avalon/javax.faces.resource/images/avatar.png.xhtml;jsessionid=node0t1bya7r411rozhn6a48cil4f325930.node0?ln=avalon-layout" alt="" />
+                                <span>Dreamcatcher locavore iPhone chillwave, occupy trust fund slow-carb distillery art party narwhal.</span>
+                            </li>
+                            <li class="clearfix message-own">
+                                <span>Sed ut perspiciatis unde omnis iste natus.</span>
+                            </li>
+                            <li class="clearfix message-from"><img id="j_idt120" src="/avalon/javax.faces.resource/images/avatar2.png.xhtml;jsessionid=node0t1bya7r411rozhn6a48cil4f325930.node0?ln=avalon-layout" alt="" />
+                                <span>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse.</span>
+                            </li>
+                            <li class="clearfix message-own"><img id="j_idt122" src="/avalon/javax.faces.resource/images/avatar.png.xhtml;jsessionid=node0t1bya7r411rozhn6a48cil4f325930.node0?ln=avalon-layout" alt="" />
+                                <span>At vero eos et accusamus.</span>
+                            </li>
+                        </ul>
+                        <div class="new-message">
+                            <div class="message-attachment">
+                                <i class="fa fa-paperclip"></i>
+                            </div>
+                            <div class="message-input">
+                                <input type="text" placeholder="Write a message" class="ui-inputfield" />
+                            </div>
+                        </div></div></div><script id="j_idt110_s" type="text/javascript">PrimeFaces.cw("Panel","widget_j_idt110",{id:"j_idt110"});</script><div id="j_idt124" class="ui-panel ui-widget ui-widget-content ui-corner-all" data-widget="widget_j_idt124"><div id="j_idt124_header" class="ui-panel-titlebar ui-widget-header ui-helper-clearfix ui-corner-all"><span class="ui-panel-title">Recent Sales</span></div><div id="j_idt124_content" class="ui-panel-content ui-widget-content">
+<form id="j_idt125" name="j_idt125" method="post" action="/avalon/dashboard.xhtml;jsessionid=node0t1bya7r411rozhn6a48cil4f325930.node0" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="j_idt125" value="j_idt125" />
+<div id="j_idt125:j_idt126" class="ui-datatable ui-widget ui-datatable-reflow" style="margin-bottom:20px"><label id="j_idt125:j_idt126_reflowDD_label" for="j_idt125:j_idt126_reflowDD" class="ui-reflow-label">Sort</label><select id="j_idt125:j_idt126_reflowDD" name="j_idt125:j_idt126_reflowDD" class="ui-reflow-dropdown ui-state-default" autocomplete="off"><option value="0_0">Id Ascending</option><option value="0_1">Id Descending</option><option value="1_0">Year Ascending</option><option value="1_1">Year Descending</option><option value="2_0">Brand Ascending</option><option value="2_1">Brand Descending</option><option value="3_0">Color Ascending</option><option value="3_1">Color Descending</option></select><div class="ui-datatable-tablewrapper"><table role="grid"><thead id="j_idt125:j_idt126_head"><tr role="row"><th id="j_idt125:j_idt126:j_idt127" class="ui-state-default ui-sortable-column" role="columnheader" aria-label="Id" scope="col"><span class="ui-column-title">Id</span><span class="ui-sortable-column-icon ui-icon ui-icon-carat-2-n-s"></span></th><th id="j_idt125:j_idt126:j_idt129" class="ui-state-default ui-sortable-column" role="columnheader" aria-label="Year" scope="col"><span class="ui-column-title">Year</span><span class="ui-sortable-column-icon ui-icon ui-icon-carat-2-n-s"></span></th><th id="j_idt125:j_idt126:j_idt131" class="ui-state-default ui-sortable-column" role="columnheader" aria-label="Brand" scope="col"><span class="ui-column-title">Brand</span><span class="ui-sortable-column-icon ui-icon ui-icon-carat-2-n-s"></span></th><th id="j_idt125:j_idt126:j_idt133" class="ui-state-default ui-sortable-column" role="columnheader" aria-label="Color" scope="col"><span class="ui-column-title">Color</span><span class="ui-sortable-column-icon ui-icon ui-icon-carat-2-n-s"></span></th></tr></thead><tbody id="j_idt125:j_idt126_data" class="ui-datatable-data ui-widget-content" tabindex="0"><tr data-ri="0" data-rk="aff6617d" class="ui-widget-content ui-datatable-even ui-datatable-selectable" role="row" aria-selected="false"><td role="gridcell">aff6617d</td><td role="gridcell">1995</td><td role="gridcell">Fiat</td><td role="gridcell">Yellow</td></tr><tr data-ri="1" data-rk="0839794a" class="ui-widget-content ui-datatable-odd ui-datatable-selectable" role="row" aria-selected="false"><td role="gridcell">0839794a</td><td role="gridcell">1966</td><td role="gridcell">BMW</td><td role="gridcell">Green</td></tr><tr data-ri="2" data-rk="573cedb8" class="ui-widget-content ui-datatable-even ui-datatable-selectable" role="row" aria-selected="false"><td role="gridcell">573cedb8</td><td role="gridcell">1967</td><td role="gridcell">Jaguar</td><td role="gridcell">Yellow</td></tr><tr data-ri="3" data-rk="6cce944d" class="ui-widget-content ui-datatable-odd ui-datatable-selectable" role="row" aria-selected="false"><td role="gridcell">6cce944d</td><td role="gridcell">2003</td><td role="gridcell">Honda</td><td role="gridcell">Black</td></tr><tr data-ri="4" data-rk="b041ca9c" class="ui-widget-content ui-datatable-even ui-datatable-selectable" role="row" aria-selected="false"><td role="gridcell">b041ca9c</td><td role="gridcell">1993</td><td role="gridcell">Audi</td><td role="gridcell">White</td></tr><tr data-ri="5" data-rk="9281b63b" class="ui-widget-content ui-datatable-odd ui-datatable-selectable" role="row" aria-selected="false"><td role="gridcell">9281b63b</td><td role="gridcell">1977</td><td role="gridcell">Renault</td><td role="gridcell">Maroon</td></tr><tr data-ri="6" data-rk="904c6806" class="ui-widget-content ui-datatable-even ui-datatable-selectable" role="row" aria-selected="false"><td role="gridcell">904c6806</td><td role="gridcell">1975</td><td role="gridcell">Fiat</td><td role="gridcell">Black</td></tr><tr data-ri="7" data-rk="a702ce70" class="ui-widget-content ui-datatable-odd ui-datatable-selectable" role="row" aria-selected="false"><td role="gridcell">a702ce70</td><td role="gridcell">1979</td><td role="gridcell">Mercedes</td><td role="gridcell">Black</td></tr><tr data-ri="8" data-rk="b81b9e57" class="ui-widget-content ui-datatable-even ui-datatable-selectable" role="row" aria-selected="false"><td role="gridcell">b81b9e57</td><td role="gridcell">1990</td><td role="gridcell">Volvo</td><td role="gridcell">Black</td></tr><tr data-ri="9" data-rk="17af4f27" class="ui-widget-content ui-datatable-odd ui-datatable-selectable" role="row" aria-selected="false"><td role="gridcell">17af4f27</td><td role="gridcell">1978</td><td role="gridcell">Renault</td><td role="gridcell">Green</td></tr></tbody></table></div><input type="hidden" id="j_idt125:j_idt126_selection" name="j_idt125:j_idt126_selection" autocomplete="off" value="" /></div><script id="j_idt125:j_idt126_s" type="text/javascript">$(function(){PrimeFaces.cw("DataTable","widget_j_idt125_j_idt126",{id:"j_idt125:j_idt126",selectionMode:"single",reflow:true,groupColumnIndexes:[]});});</script><input type="hidden" name="javax.faces.ViewState" id="j_id1:javax.faces.ViewState:36" value="-3784561211329516746:549984700397083665" autocomplete="off" />
+</form></div></div><script id="j_idt124_s" type="text/javascript">PrimeFaces.cw("Panel","widget_j_idt124",{id:"j_idt124"});</script>
+                </div>
+                
+                <div class="ui-g-12 ui-lg-4">
+                    <div class="card timeline ui-fluid">
+                        <div class="ui-g">
+                            <div class="ui-g-3">
+                                <span class="event-time">just now</span>
+                                <i class="fa fa-map-signs" style="color:#147df0"></i>
+                            </div>
+                            <div class="ui-g-9">
+                                <span class="event-owner" style="color:#147df0">Katherine May</span>
+                                <span class="event-text">Lorem ipsun dolor amet</span>
+                                <div class="event-content"><img id="j_idt136" src="/avalon/javax.faces.resource/images/dashboard/bridge.png.xhtml;jsessionid=node0t1bya7r411rozhn6a48cil4f325930.node0?ln=avalon-layout" alt="" width="100" />
+                                </div>
+                            </div>
+
+                            <div class="ui-g-3">
+                                <span class="event-time">12h ago</span>
+                                <i class="fa fa-star" style="color:#ed3c76"></i>
+                            </div>
+                            <div class="ui-g-9">
+                                <span class="event-owner" style="color:#ed3c76">Brandon Santos</span>
+                                <span class="event-text">Ab nobis, magnam sunt eum. Laudantium, repudiandae, similique!.</span>
+                            </div>
+
+                            <div class="ui-g-3">
+                                <span class="event-time">15h ago</span>
+                                <i class="fa fa-comment" style="color:#3e9018"></i>
+                            </div>
+                            <div class="ui-g-9">
+                                <span class="event-owner" style="color:#3e9018">Stephan Ward</span>
+                                <span class="event-text">Omnis veniam quibusdam ratione est repellat qui nam quisquam ab mollitia dolores ullam voluptates, similique, dignissimos.</span>
+                            </div>
+
+                            <div class="ui-g-3">
+                                <span class="event-time">2d ago</span>
+                                <i class="fa fa-map" style="color:#ffb200"></i>
+                            </div>
+                            <div class="ui-g-9">
+                                <span class="event-owner" style="color:#ffb200">Jason Smith</span>
+                                <span class="event-text">Laudantium, repudiandae, similique!</span>
+                                <div class="event-content"><img id="j_idt138" src="/avalon/javax.faces.resource/images/dashboard/map.png.xhtml;jsessionid=node0t1bya7r411rozhn6a48cil4f325930.node0?ln=avalon-layout" alt="" />
+                                </div>
+                            </div>
+
+                            <div class="ui-g-3">
+                                <span class="event-time">1w ago</span>
+                                <i class="fa fa-heart" style="color:#633ea5"></i>
+                            </div>
+                            <div class="ui-g-9">
+                                <span class="event-owner">Kevin Cox</span>
+                                <span class="event-text">Quibusdam ratione est repellat qui nam quisquam veniam quibusdam ratione.</span>
+                            </div>
+
+                            <div class="ui-g-3">
+                                <span class="event-time">2w ago</span>
+                                <i class="fa fa-history" style="color:#599597"></i>
+                            </div>
+                            <div class="ui-g-9">
+                                <span class="event-owner" style="color:#599597">Walter White</span>
+                                <span class="event-text">I am the one who knocks!</span>
+                            </div>
+
+                            <div class="ui-g-12"><button id="j_idt140" name="j_idt140" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon-left rounded-btn raised-btn" type="button"><span class="ui-button-icon-left ui-icon ui-c ui-icon-refresh"></span><span class="ui-button-text ui-c">Refresh</span></button><script id="j_idt140_s" type="text/javascript">PrimeFaces.cw("CommandButton","widget_j_idt140",{id:"j_idt140"});</script>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ui-g-12"><div id="j_idt142" class="ui-panel ui-widget ui-widget-content ui-corner-all" style="height:100%" data-widget="widget_j_idt142"><div id="j_idt142_header" class="ui-panel-titlebar ui-widget-header ui-helper-clearfix ui-corner-all"><span class="ui-panel-title">Calendar</span></div><div id="j_idt142_content" class="ui-panel-content ui-widget-content"><div id="j_idt143"><div id="j_idt143_container"></div><input type="hidden" id="j_idt143_view" name="j_idt143_view" autocomplete="off" value="month" /></div><script id="j_idt143_s" type="text/javascript">$(function(){PrimeFaces.cw("Schedule","widget_j_idt143",{id:"j_idt143",defaultView:"month",locale:"en_US",lazyFetching:false,header:{left:'prev,next',center:"title",right:"month,agendaWeek,agendaDay"}});});</script></div></div><script id="j_idt142_s" type="text/javascript">PrimeFaces.cw("Panel","widget_j_idt142",{id:"j_idt142"});</script>
+                </div>
+            </div>
+        </div>
+            </div>
+    
+    <div class="layout-footer">
+        <span class="footer-text-left"><img id="j_idt147" src="/avalon/javax.faces.resource/images/logo-dark.png.xhtml;jsessionid=node0t1bya7r411rozhn6a48cil4f325930.node0?ln=avalon-layout" alt="" />
+        </span>
+        <span class="footer-text-right">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-github"></i></a>
+        </span>
+    </div>
+        </div><div id="j_idt150" style="width:32px;height:32px;position:fixed;right:7px;bottom:7px"><div id="j_idt150_start" style="display:none">
+               <i class="fa fa-circle-o-notch fa-spin ajax-loader" aria-hidden="true"></i></div><div id="j_idt150_complete" style="display:none"></div></div><script id="j_idt150_s" type="text/javascript">$(function(){PrimeFaces.cw("AjaxStatus","widget_j_idt150",{id:"j_idt150"});});</script></body>
+
+</html>
