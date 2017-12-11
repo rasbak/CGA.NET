@@ -1,0 +1,90 @@
+﻿@model CGA_WEB.Models.VehiclewreckModel
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/GlobalView.cshtml";
+
+}
+
+<h2>Create</h2>
+
+@using (Html.BeginForm("Create", "VehicleWreck", FormMethod.Post, new { @id = "vehiclewreckFormId", @class = "form-horizontal", role = "form" }))
+{
+    @Html.AntiForgeryToken()
+
+
+    HtmlHelper.UnobtrusiveJavaScriptEnabled = false;
+    Html.EnableClientValidation(false);
+
+
+
+    @*@using (Html.BeginForm())
+    { < div class = "editor-label" > @Html.LabelFor(m => m.EmpName) < /div> 
+        < div class = "editor-field" > @Html.TextBoxFor(m => m.EmpName)
+    @Html.ValidationMessageFor(m => m.EmpName) < /div> 
+        < div class = "editor-label" > @Html.LabelFor(m => m.Address) < /div>
+         < div class = "editor-field" > @Html.TextBoxFor(m => m.Address)
+    @Html.ValidationMessageFor(m => m.Address) < /div> 
+        < div class = "editor-label" > @Html.LabelFor(m => m.Salary) < /div> 
+        < div class = "editor-field" > @Html.TextBoxFor(m => m.Salary) @Html.ValidationMessageFor(m => m.Salary) < /div> 
+        < div class = "editor-label" > @Html.LabelFor(m => m.Email) < /div> < div class = "editor-field" > @Html.TextBoxFor(m => m.Email)
+    @Html.ValidationMessageFor(m => m.Email) < /div> 
+        < p > < input type = "submit"
+    value = "Save" / > < /p>*@  
+
+
+
+
+    <div class="form-horizontal">
+        <h4>VehiclewreckModel</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            @Html.LabelFor(model => model.numchassis, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.numchassis, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.numchassis, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.couleur, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.couleur, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.couleur, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.description, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextAreaFor(model => model.description, 10, 40, htmlAttributes: new { style = "width: 100%; max-width: 100%;"  })
+                @Html.ValidationMessageFor(model => model.description, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.modele, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.modele, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.modele, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-default"  />
+
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+@section Scripts {
+
+    @Scripts.Render("~/bundles/jqueryval")
+    @Scripts.Render("~/bundles/custom-validator")
+}

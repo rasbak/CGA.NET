@@ -1,0 +1,60 @@
+﻿    @model CGA_WEB.Models.VehiclewreckModel
+            
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/GlobalView.cshtml";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>VehiclewreckModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.numchassis)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.numchassis)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.couleur)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.couleur)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.modele)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.modele)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn alert-danger" onclick="swal('Congrats!', 'vehicle deleted successfully!', 'return');"/> |
+
+
+                @Html.ActionLink("Back to List", "Index")
+            </div>
+        }
+    </div>
