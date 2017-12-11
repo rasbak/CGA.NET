@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Domain.Entities;
+using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
@@ -16,6 +17,8 @@ namespace Data
 
 
         }
+        public DbSet<report> report { get; set; }
+        public DbSet<user> user { get; set; }
 
     }
 }

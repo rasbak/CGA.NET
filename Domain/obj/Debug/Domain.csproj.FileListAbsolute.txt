@@ -7,5 +7,6 @@ C:\Users\bakke\OneDrive\Documents\Visual Studio 2015\Projects\CGA\Domain\bin\Deb
 C:\Users\bakke\OneDrive\Documents\Visual Studio 2015\Projects\CGA\Domain\bin\Debug\MySql.Data.Entity.EF6.dll
 C:\Users\bakke\OneDrive\Documents\Visual Studio 2015\Projects\CGA\Domain\bin\Debug\EntityFramework.xml
 C:\Users\bakke\OneDrive\Documents\Visual Studio 2015\Projects\CGA\Domain\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\bakke\OneDrive\Documents\Visual Studio 2015\Projects\CGA\Domain\obj\Debug\Domain.csprojResolveAssemblyReference.cache
 C:\Users\bakke\OneDrive\Documents\Visual Studio 2015\Projects\CGA\Domain\obj\Debug\Domain.dll
 C:\Users\bakke\OneDrive\Documents\Visual Studio 2015\Projects\CGA\Domain\obj\Debug\Domain.pdb

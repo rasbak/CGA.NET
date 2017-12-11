@@ -14,3 +14,5 @@ C:\Users\bakke\OneDrive\Documents\Visual Studio 2015\Projects\CGA\Services\bin\D
 C:\Users\bakke\OneDrive\Documents\Visual Studio 2015\Projects\CGA\Services\obj\Debug\Services.csprojResolveAssemblyReference.cache
 C:\Users\bakke\OneDrive\Documents\Visual Studio 2015\Projects\CGA\Services\obj\Debug\Services.dll
 C:\Users\bakke\OneDrive\Documents\Visual Studio 2015\Projects\CGA\Services\obj\Debug\Services.pdb
+C:\Users\bakke\OneDrive\Documents\Visual Studio 2015\Projects\CGA\Services\bin\Debug\Services.Pattern.dll
+C:\Users\bakke\OneDrive\Documents\Visual Studio 2015\Projects\CGA\Services\bin\Debug\Services.Pattern.pdb

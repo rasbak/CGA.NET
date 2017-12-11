@@ -1,4 +1,3 @@
-C:\Users\bakke\OneDrive\Documents\Visual Studio 2015\Projects\CGA\Data\obj\Debug\DATA.csprojResolveAssemblyReference.cache
 C:\Users\bakke\OneDrive\Documents\Visual Studio 2015\Projects\CGA\Data\bin\Debug\Data.dll.config
 C:\Users\bakke\OneDrive\Documents\Visual Studio 2015\Projects\CGA\Data\bin\Debug\Data.dll
 C:\Users\bakke\OneDrive\Documents\Visual Studio 2015\Projects\CGA\Data\bin\Debug\Data.pdb
@@ -10,5 +9,19 @@ C:\Users\bakke\OneDrive\Documents\Visual Studio 2015\Projects\CGA\Data\bin\Debug
 C:\Users\bakke\OneDrive\Documents\Visual Studio 2015\Projects\CGA\Data\bin\Debug\Domain.pdb
 C:\Users\bakke\OneDrive\Documents\Visual Studio 2015\Projects\CGA\Data\bin\Debug\EntityFramework.xml
 C:\Users\bakke\OneDrive\Documents\Visual Studio 2015\Projects\CGA\Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\bakke\OneDrive\Documents\Visual Studio 2015\Projects\CGA\Data\obj\Debug\DATA.csprojResolveAssemblyReference.cache
 C:\Users\bakke\OneDrive\Documents\Visual Studio 2015\Projects\CGA\Data\obj\Debug\Data.dll
 C:\Users\bakke\OneDrive\Documents\Visual Studio 2015\Projects\CGA\Data\obj\Debug\Data.pdb
+C:\Users\bakke\OneDrive\Documents\Visual Studio 2015\Projects\CGA\Data\obj\Debug\Data.Migrations.hgjklm.resources
+C:\Users\bakke\OneDrive\Documents\Visual Studio 2015\Projects\CGA\Data\obj\Debug\DATA.csproj.GenerateResource.Cache
+C:\Users\bakke\OneDrive\Documents\Visual Studio 2015\Projects\CGA\Data\obj\Debug\Data.Migrations._45.resources
+C:\Users\bakke\OneDrive\Documents\Visual Studio 2015\Projects\CGA\Data\bin\Debug\System.Net.Http.dll
+C:\Users\bakke\OneDrive\Documents\Visual Studio 2015\Projects\CGA\Data\bin\Debug\System.Net.Http.Extensions.dll
+C:\Users\bakke\OneDrive\Documents\Visual Studio 2015\Projects\CGA\Data\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\bakke\OneDrive\Documents\Visual Studio 2015\Projects\CGA\Data\bin\Debug\System.Net.Http.Primitives.dll
+C:\Users\bakke\OneDrive\Documents\Visual Studio 2015\Projects\CGA\Data\bin\Debug\System.Net.Http.WebRequest.dll
+C:\Users\bakke\OneDrive\Documents\Visual Studio 2015\Projects\CGA\Data\bin\Debug\System.Net.Http.xml
+C:\Users\bakke\OneDrive\Documents\Visual Studio 2015\Projects\CGA\Data\bin\Debug\System.Net.Http.WebRequest.xml
+C:\Users\bakke\OneDrive\Documents\Visual Studio 2015\Projects\CGA\Data\obj\Debug\Data.Migrations.kugf.resources
+C:\Users\bakke\OneDrive\Documents\Visual Studio 2015\Projects\CGA\Data\obj\Debug\Data.Migrations._48.resources
+C:\Users\bakke\OneDrive\Documents\Visual Studio 2015\Projects\CGA\Data\obj\Debug\Data.Migrations.report.resources

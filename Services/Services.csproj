@@ -57,7 +57,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReclamationService.cs" />
+    <Compile Include="ServiceUser.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Data\DATA.csproj">
@@ -67,6 +70,10 @@
     <ProjectReference Include="..\Domain\Domain.csproj">
       <Project>{98a11e96-e92b-4d80-a373-286bbd25942c}</Project>
       <Name>Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Services.Pattern\Services.Pattern.csproj">
+      <Project>{C5AEE681-2EC4-490D-AF2E-53316DCFFE00}</Project>
+      <Name>Services.Pattern</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

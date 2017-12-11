@@ -17,6 +17,14 @@ namespace Domain.Entities
         [StringLength(255)]
         public string subject { get; set; }
 
+        [StringLength(255)]
+        public string name { get; set; }
+        [StringLength(255)]
+        public string lastName { get; set; }
+
+
+        public int vu { get; set; }
+
         public int? insured_id { get; set; }
     }
 }

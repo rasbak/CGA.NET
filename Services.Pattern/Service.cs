@@ -77,7 +77,11 @@ namespace Service.Patern
         public virtual async Task<int> CountAsync()
         {
             //return await _repository.CountAsync();
-            return await utwk.GetRepository<TEntity>().CountAsync();
+            return await utwk.
+            
+            
+            
+            epository<TEntity>().CountAsync();
         }
 
         public virtual async Task<List<TEntity>> GetAllAsync()

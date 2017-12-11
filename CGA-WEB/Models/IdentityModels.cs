@@ -29,5 +29,7 @@ namespace CGA_WEB.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<CGA_WEB.Models.ReclmationViewModel> ReclmationViewModels { get; set; }
     }
 }

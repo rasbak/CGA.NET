@@ -1,0 +1,521 @@
+﻿
+@model CGA_WEB.Models.ReclmationViewModel
+
+@{
+    ViewBag.Title = "Profile";
+    
+}
+
+<!DOCTYPE html>
+
+<head id="j_idt2">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="theme-color" content="#03A9F4" />
+    <link type="text/css" rel="stylesheet" href="~/avalon/javax.faces.resource/theme.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    </link>
+    <link type="text/css" rel="stylesheet" href="~/avalon/javax.faces.resource/fa/font-awesome.css" />
+    <link type="text/css" rel="stylesheet" href="~/avalon/javax.faces.resource/components.css" />
+    <script type="text/javascript" src="~/avalon/javax.faces.resource/moment/moment.js"></script>
+    <script type="text/javascript" src="~/avalon/javax.faces.resource/schedule/schedule.js"></script>
+    <link type="text/css" rel="stylesheet" href="~/avalon/javax.faces.resource/css/nanoscroller.css" />
+    <link type="text/css" rel="stylesheet" href="https://www.primefaces.org/avalon/javax.faces.resource/css/animate.css.xhtml?ln=avalon-layout"></link>
+    <link type="text/css" rel="stylesheet" href="~/avalon/javax.faces.resource/css/layout-blue.css" />
+    <script type="text/javascript">if(window.PrimeFaces){PrimeFaces.settings.locale='en_US';PrimeFaces.settings.projectStage='Development';}</script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <title>Dashboard</title>
+    <script type="text/javascript" src="~/avalon/javax.faces.resource/js/nanoscroller.js"></script>
+    <script type="text/javascript" src="~/avalon/javax.faces.resource/js/layout.js"></script>
+
+</head>
+
+
+<body>
+
+    <div class="layout-wrapper menu-layout-static">
+
+        <div class="topbar clearfix">
+            <div class="topbar-left">
+            </div>
+
+            <div class="topbar-right">
+                <a id="menu-button" href="#">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+
+                <a id="topbar-menu-button" href="#">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <ul class="topbar-items fadeInDown animated">
+
+                    <li>
+                    <li>
+                        <a href="@Url.Action("Index", "Home")">
+
+                            <i class="topbar-icon fa fa-fw fa-sign-out"></i>
+                            <span class="topbar-item-name"></span>
+
+                        </a>
+
+                    </li>
+
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="topbar-icon fa fa-fw fa-cog"></i>
+                            <span class="topbar-item-name">Settings</span>
+                        </a>
+                        <ul class="layout-menu animated">
+                            <li role="menuitem">
+                                <a href="#">
+                                    <i class="fa fa-fw fa-paint-brush"></i>
+                                    <span>Change Theme</span>
+                                </a>
+                            </li>
+                            <li role="menuitem">
+                                <a href="#">
+                                    <i class="fa fa-fw fa-star-o"></i>
+                                    <span>Favorites</span>
+                                </a>
+                            </li>
+                            <li role="menuitem">
+                                <a href="#">
+                                    <i class="fa fa-fw fa-lock"></i>
+                                    <span>Lock Screen</span>
+                                </a>
+                            </li>
+                            <li role="menuitem">
+                                <a href="#">
+                                    <i class="fa fa-fw fa-picture-o"></i>
+                                    <span>Wallpaper</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        
+                        <ul class="layout-menu animated">
+                            <li role="menuitem">
+                                <a href="#" class="topbar-message">
+                                    <img id="j_idt19" src="./avalon/javax.faces.resource/images/avatar1.png" alt="" width="35" />
+                                    <span>Give me a call</span>
+                                </a>
+                            </li>
+                            <li role="menuitem">
+                                <a href="#" class="topbar-message">
+                                    <img id="j_idt21" src="./avalon/javax.faces.resource/images/avatar2.png" alt="" width="35" />
+                                    <span>Sales reports attached</span>
+                                </a>
+                            </li>
+                            <li role="menuitem">
+                                <a href="#" class="topbar-message">
+                                    <img id="j_idt23" src="./avalon/javax.faces.resource/images/avatar3.png" alt="" width="35" />
+                                    <span>About your invoice</span>
+                                </a>
+                            </li>
+                            <li role="menuitem">
+                                <a href="#" class="topbar-message">
+                                    <img id="j_idt25" src="./avalon/javax.faces.resource/images/avatar2.png" alt="" width="35" />
+                                    <span>Meeting today at 10pm</span>
+                                </a>
+                            </li>
+                            <li role="menuitem">
+                                <a href="#" class="topbar-message">
+                                    <img id="j_idt27" src="./avalon/javax.faces.resource/images/avatar4.png" alt="" width="35" />
+                                    <span>Out of office</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                       
+                        <ul class="layout-menu animated">
+                            <li role="menuitem">
+                                <a href="#">
+                                    <i class="fa fa-fw fa-tasks"></i>
+                                    <span>Pending tasks</span>
+                                </a>
+                            </li>
+                            <li role="menuitem">
+                                <a href="#">
+                                    <i class="fa fa-fw fa-calendar-check-o"></i>
+                                    <span>Meeting today at 3pm</span>
+                                </a>
+                            </li>
+                            <li role="menuitem">
+                                <a href="#">
+                                    <i class="fa fa-fw fa-download"></i>
+                                    <span>Download documents</span>
+                                </a>
+                            </li>
+                            <li role="menuitem">
+                                <a href="#">
+                                    <i class="fa fa-fw fa-plane"></i>
+                                    <span>Book flight</span>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li>
+                    
+                        <a href="@Url.Action("Profil", "Home")">
+
+                            <i class="topbar-icon fa fa-user"></i>
+                            <span class="topbar-item-name"></span>
+                           @ViewBag.user.email
+                        </a>
+
+                    
+
+                    </li>
+                    <li class="search-item">
+                        <div class="topbar-search">
+                            <input type="text" placeholder="Search" />
+                            <i class="fa fa-search"></i>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <form id="menuform" name="menuform" method="post" action="/avalon/dashboard.xhtml" enctype="application/x-www-form-urlencoded">
+            <input type="hidden" name="menuform" value="menuform" />
+
+            <div class="layout-menu-container ">
+                <div class="nano">
+                    <div class="nano-content menu-scroll-content">
+                        <div class="profile">
+                            <a href="/cga-web/indexLogin.jsf"> <img id="j_idt12" src="~/avalon/javax.faces.resource/images/logo.png;" alt="" /></a>
+                        </div>
+
+
+                        <ul id="menuform:j_idt34" class="layout-menu clearfix">
+                            <li id="menuform:om_dashboards" role="menuitem">
+                            <li id="menuform:am_customization" role="menuitem">
+                                <a href="#" class="ripplelink">
+                                    <i class="fa fa-fw fa-bars"></i><span>Assurance</span><span class="ink animate"></span>
+                                </a>
+                            </li>
+
+
+                            <li id="menuform:am_customization" role="menuitem">
+                                <a url="/Issured/MyContract.jsf" class="ripplelink">
+                                    <i class="fa fa-percent"></i><span>Offre</span><span class="ink animate"></span>
+                                </a>
+                            </li>
+                            <li id="menuform:am_customization" role="menuitem">
+                                <a href="/cga-web/Issured/CreateContract.jsf" class="ripplelink">
+                                    <i class="fa fa-address-card-o"></i><span>Effectuer un contrat</span><span class="ink animate"></span>
+                                </a>
+                            </li>
+
+                            <li id="menuform:am_customization" role="menuitem">
+                                <a href="#" class="ripplelink">
+                                    <i class="fa fa-usd"></i><span>Comparer les prix</span><span class="ink animate"></span>
+                                </a>
+                            </li>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div><input type="hidden" name="javax.faces.ViewState" id="j_id1:javax.faces.ViewState:0" value="-3784561211329516746:549984700397083665" autocomplete="off" />
+        </form>
+
+        <div class="layout-main">
+            <div class="dashboard">
+
+                <div class="ui-g">
+                    <div class="ui-g-12 ui-lg-6 global-sales">
+                        <div id="j_idt38" class="ui-panel ui-widget ui-widget-content ui-corner-all" data-widget="widget_j_idt38">
+                            <div id="j_idt38_header" class="ui-panel-titlebar ui-widget-header ui-helper-clearfix ui-corner-all">
+                                <span class="ui-panel-title">
+                                    <i class="fa fa-info"></i>
+                                    <span>Informations personnel</span>
+                                </span>
+                                <span class="float-right">
+
+                                    <h:button styleClass="btn btn-outline-warning" value="Modifier" outcome="#{userBean.modifier(loginBean.insured)}" />
+
+
+
+                                </span>
+                            </div>
+                            <div id="j_idt38_content" class="ui-panel-content ui-widget-content">
+
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th></th>
+                                            <th></th>
+                                            <th></th>
+                                            <th></th>
+                                            <th></th>
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+
+                                            <td style="color: gray">nom</td>
+                                            <td></td>
+                                            <td>@ViewBag.user.lastName</td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="color: gray;">prenom</td>
+                                            <td></td>
+                                            <td>@ViewBag.user.firstName</td>
+                                            <td></td>
+                                            <td></td>
+
+                                        </tr>
+                                        <tr>
+                                            <td style="color: gray;">email</td>
+                                            <td></td>
+                                            <td>@ViewBag.user.email</td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="color: gray;">n°permit de conduite</td>
+                                            <td></td>
+                                            <td>@ViewBag.user.driverLN</td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <script id="j_idt38_s" type="text/javascript">PrimeFaces.cw("Panel","widget_j_idt38",{id:"j_idt38"});</script>
+
+                    </div>
+
+                    <div class="ui-g-12 ui-lg-6 product-statistics">
+                        <div id="j_idt50" class="ui-panel ui-widget ui-widget-content ui-corner-all" data-widget="widget_j_idt50">
+                            <div id="j_idt50_header" class="ui-panel-titlebar ui-widget-header ui-helper-clearfix ui-corner-all">
+                                <span class="ui-panel-title">
+                                    <i class="fa fa-car"></i>
+                                    <span>Voitures</span>
+                                    <span class="float-right">
+                                        <a class="btn btn-outline-success" href="#">
+                                            <i class="glyphicon glyphicon-align-left"></i>Ajouter
+                                        </a>
+                                    </span>
+                                </span>
+                            </div>
+                            <div id="j_idt50_content" class="ui-panel-content ui-widget-content">
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td class="col-overview col-wait">
+                                                <div>K</div>
+                                            </td>
+                                            <td class="col-status">
+                                                <span class="status-time">Last Update: 12m ago</span>
+                                                <span class="status-text">Kia rio</span>
+                                            </td>
+                                            <td class="col-numbers">
+                                                <div>assuré<span>oui</span></div>
+                                                <div>fin contrat <span>12/2018</span></div>
+                                            </td>
+                                            <td>
+                                                <span class="float-right">
+                                                    <a class="btn btn-outline-warning" href="#">
+                                                        <i class="glyphicon glyphicon-align-left"></i> Modifier
+                                                    </a>
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-overview col-delay">
+                                                <div>G</div>
+                                            </td>
+                                            <td class="col-status">
+                                                <span class="status-time">Last Update: 12m ago</span>
+                                                <span class="status-text">Golf 5</span>
+                                            </td>
+                                            <td class="col-numbers">
+                                                <div>assuré<span>oui</span></div>
+                                                <div>fin contrat <span>12/2019</span></div>
+                                            </td>
+                                            <td>
+                                                <span class="float-right">
+                                                    <a class="btn btn-outline-warning" href="#">
+                                                        <i class="glyphicon glyphicon-align-left"></i> Modifier
+                                                    </a>
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-overview col-success">
+                                                <div>F</div>
+                                            </td>
+                                            <td class="col-status">
+                                                <span class="status-time">Last Update: 12m ago</span>
+                                                <span class="status-text">Fiat panda</span>
+                                            </td>
+                                            <td class="col-numbers">
+                                                <div>assuré<span>non</span></div>
+                                                <div> - <span> -</span></div>
+                                            </td>
+                                            <td>
+                                                <span class="float-right">
+                                                    <a class="btn btn-outline-warning" href="#">
+                                                        <i class="glyphicon glyphicon-align-left"></i> Modifier
+                                                    </a>
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-overview col-preorder">
+                                                <div>P</div>
+                                            </td>
+                                            <td class="col-status">
+                                                <span class="status-time">Last Update: 12m ago</span>
+                                                <span class="status-text">Polo 7</span>
+                                            </td>
+                                            <td class="col-numbers">
+                                                <div>assuré<span>non</span></div>
+                                                <div> - <span> -</span></div>
+                                            </td>
+                                            <td>
+                                                <span class="float-right">
+                                                    <a class="btn btn-outline-warning" href="#">
+                                                        <i class="glyphicon glyphicon-align-left"></i> Modifier
+                                                    </a>
+                                                </span>
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <script id="j_idt50_s" type="text/javascript">PrimeFaces.cw("Panel","widget_j_idt50",{id:"j_idt50"});</script>
+                    </div>
+                </div>
+
+                <div class="">
+                    <div class="ui-g ">
+
+                        <div class="ui-g-12 ui-md-6 ui-lg-4 ui-fluid contact-form">
+                            <div id="j_idt79" class="ui-panel ui-widget ui-widget-content ui-corner-all" data-widget="widget_j_idt79">
+                                <div id="j_idt79_header" class="ui-panel-titlebar ui-widget-header ui-helper-clearfix ui-corner-all">
+                                    <span class="ui-panel-title">Réclamation</span>
+                                </div>
+                                <div id="j_idt79_content" class="ui-panel-content ui-widget-content">
+                                    <div class="ui-g">
+                                        <div class="ui-g-12">
+
+
+                                            <script id="console_s" type="text/javascript">$(function(){PrimeFaces.cw("SelectOneMenu","widget_console",{id:"console",autoWidth:false});});</script>
+                                        </div>
+                                      @using (Html.BeginForm())
+                                      {
+                                        @Html.AntiForgeryToken()
+                                        <div class="ui-g-12">
+                                            @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-alls", @placeholder = "Email" } })
+                                            @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+                                            <script id="j_idt88_s" type="text/javascript">PrimeFaces.cw("InputText","widget_j_idt88",{id:"j_idt88"});</script>
+                                        </div>
+                                        <div class="ui-g-12">
+                                            @Html.EditorFor(model => model.pass, new { htmlAttributes = new { @type = "password", @class = "ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-alls", @placeholder = "Mot de passe" } })
+                                            @Html.ValidationMessageFor(model => model.subject, "", new { @class = "text-danger" })
+                                            <script id="j_idt90_s" type="text/javascript">PrimeFaces.cw("InputText","widget_j_idt90",{id:"j_idt90"});</script>
+                                        </div>
+                                        <div class="ui-g-12">
+                                            @Html.EditorFor(model => model.subject, new { htmlAttributes = new { @class = "ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-alls", @placeholder = "Sujet" } })
+                                            @Html.ValidationMessageFor(model => model.subject, "", new { @class = "text-danger" })
+                                            <script id="j_idt90_s" type="text/javascript">PrimeFaces.cw("InputText","widget_j_idt90",{id:"j_idt90"});</script>
+                                        </div>
+                                       
+                                        <div class="ui-g-12">
+                                            @Html.TextAreaFor(model => model.Content, new { @class = "ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all", @cols = 5, @rows = 10, @placeholder = "Message", @maxlength = "2147483647"  })
+
+                                            <script id="j_idt92_s" type="text/javascript">$(function(){PrimeFaces.cw("InputTextarea","widget_j_idt92",{id:"j_idt92",autoResize:false});});</script>
+                                        </div>
+                                        <div class="ui-g-12">
+                                          
+                                            
+                                            <button type="submit" id="j_idt94" name="j_idt94" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon-left" ><span class="ui-button-icon-left ui-icon ui-c fa fa-paper-plane-o"></span><span class="ui-button-text ui-c">Send</span></button>
+                                            <script id="j_idt94_s" type="text/javascript">PrimeFaces.cw("CommandButton","widget_j_idt94",{id:"j_idt94"});</script>
+                                        </div>
+                                      }
+                                    </div>
+                                </div>
+                            </div>
+                            <script id="j_idt79_s" type="text/javascript">PrimeFaces.cw("Panel","widget_j_idt79",{id:"j_idt79"});</script>
+                        </div>
+                        <div class="ui-g-12 ui-lg-4 contacts">
+                            <div id="j_idt97" class="ui-panel ui-widget ui-widget-content ui-corner-all" data-widget="widget_j_idt97">
+                                <div id="j_idt97_header" class="ui-panel-titlebar ui-widget-header ui-helper-clearfix ui-corner-all">
+                                    <span class="ui-panel-title">Contrats</span>
+                                </div>
+                                <div id="j_idt97_content" class="ui-panel-content ui-widget-content">
+                                    <ul>
+                                        <li class="clearfix">
+                                            <img id="j_idt99" src="~/avalon/javax.faces.resource/images/avatar.png" alt="" width="45" />
+                                            <div class="contact-info">
+                                                <span class="name">contrat star</span>
+                                                <span class="location">02-01-2016</span>
+                                            </div>
+                                            <div class="contact-actions">
+                                                <a href="" style="text-decoration:none"><span class="connection-status online">voir détails</span></a>
+                                                <i class="fa fa-paper-plane-o"></i>
+                                                <i class="fa fa-phone"></i>
+                                            </div>
+                                        </li>
+                                        <li class="clearfix">
+                                            <img id="j_idt101" src="./avalon/javax.faces.resource/images/avatar1.png" alt="" width="45" />
+                                            <div class="contact-info">
+                                                <span class="name">Contrat star</span>
+                                                <span class="location">05-01-2017</span>
+                                            </div>
+                                            <div class="contact-actions">
+
+                                                <a href="" style="text-decoration:none"><span class="connection-status online">voir détails</span></a>
+
+                                                <i class="fa fa-paper-plane-o"></i>
+                                                <i class="fa fa-phone"></i>
+                                            </div>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                            <script id="j_idt97_s" type="text/javascript">PrimeFaces.cw("Panel","widget_j_idt97",{id:"j_idt97"});</script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="layout-footer">
+            <span class="footer-text-left">
+                <img id="j_idt147" src="~/avalon/javax.faces.resource/images/logo-dark.png" alt="" />
+            </span>
+            <span class="footer-text-right">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-github"></i></a>
+            </span>
+        </div>
+    </div><div id="j_idt150" style="width:32px;height:32px;position:fixed;right:7px;bottom:7px">
+        <div id="j_idt150_start" style="display:none">
+            <i class="fa fa-circle-o-notch fa-spin ajax-loader" aria-hidden="true"></i>
+        </div><div id="j_idt150_complete" style="display:none"></div>
+    </div>
+    <script id="j_idt150_s" type="text/javascript">$(function(){PrimeFaces.cw("AjaxStatus","widget_j_idt150",{id:"j_idt150"});});</script>
+</body>
+
+
+

@@ -1,0 +1,254 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+    
+}
+@model CGA_WEB.Models.UserViewModal
+
+<!DOCTYPE html>
+
+    <head id="j_idt2">
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="theme-color" content="#03A9F4" />
+        <link type="text/css" rel="stylesheet" href="~/avalon/javax.faces.resource/theme.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous"/>
+      
+        <link type="text/css" rel="stylesheet" href="~/avalon/javax.faces.resource/fa/font-awesome.css" />
+        <link type="text/css" rel="stylesheet" href="~/avalon/javax.faces.resource/components.css" />
+        <script type="text/javascript" src="~/avalon/javax.faces.resource/moment/moment.js"></script>
+        <script type="text/javascript" src="~/avalon/javax.faces.resource/schedule/schedule.js"></script>
+        <link type="text/css" rel="stylesheet" href="~/avalon/javax.faces.resource/css/nanoscroller.css" />
+        <link type="text/css" rel="stylesheet" href="https://www.primefaces.org/avalon/javax.faces.resource/css/animate.css.xhtml?ln=avalon-layout"></link>
+        <link type="text/css" rel="stylesheet" href="~/avalon/javax.faces.resource/css/layout-blue.css" />
+        <script type="text/javascript">if(window.PrimeFaces){PrimeFaces.settings.locale='en_US';PrimeFaces.settings.projectStage='Development';}</script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
+        <title>Dashboard</title>
+        <script type="text/javascript" src="~/avalon/javax.faces.resource/js/nanoscroller.js"></script>
+        <script type="text/javascript" src="~/avalon/javax.faces.resource/js/layout.js"></script>
+
+    </head>
+
+
+    <body>
+
+        <div class="layout-wrapper menu-layout-static">
+
+            <div class="topbar clearfix">
+                <div class="topbar-left">
+
+                </div>
+
+                <div class="topbar-right">
+                    <a id="menu-button" href="#">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a id="topbar-menu-button" href="#">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                    <ul class="topbar-items fadeInDown animated">
+
+                        <li>
+                            <a href="@Url.Action("Index", "Home")">
+
+                                <i class="topbar-icon fa fa-fw fa-sign-out"></i>
+                                <span class="topbar-item-name"></span>
+
+                            </a>
+
+                        </li>
+                        <li>
+
+
+                            <a href="#">
+                                <i class="topbar-icon fa fa-fw fa-cog"></i>
+                                <span class="topbar-item-name">Settings</span>
+                            </a>
+                            <ul class="layout-menu animated">
+                                <li role="menuitem">
+                                    <a href="#">
+                                        <i class="fa fa-fw fa-paint-brush"></i>
+                                        <span>Change Theme</span>
+                                    </a>
+                                </li>
+                                <li role="menuitem">
+                                    <a href="#">
+                                        <i class="fa fa-fw fa-star-o"></i>
+                                        <span>Favorites</span>
+                                    </a>
+                                </li>
+                                <li role="menuitem">
+                                    <a href="#">
+                                        <i class="fa fa-fw fa-lock"></i>
+                                        <span>Lock Screen</span>
+                                    </a>
+                                </li>
+                                <li role="menuitem">
+                                    <a href="#">
+                                        <i class="fa fa-fw fa-picture-o"></i>
+                                        <span>Wallpaper</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="topbar-icon animated swing fa fa-fw fa-envelope-o"></i>
+                                <span class="topbar-badge animated rubberBand">5</span>
+                                <span class="topbar-item-name">Messages</span>
+                            </a>
+                            <ul class="layout-menu animated">
+                                <li role="menuitem">
+                                    <a href="#" class="topbar-message">
+                                        <img id="j_idt19" src="~/avalon/javax.faces.resource/images/avatar1.png" alt="" width="35" />
+                                        <span>Give me a call</span>
+                                    </a>
+                                </li>
+                                <li role="menuitem">
+                                    <a href="#" class="topbar-message">
+                                        <img id="j_idt21" src="~/avalon/javax.faces.resource/images/avatar2.png" alt="" width="35" />
+                                        <span>Sales reports attached</span>
+                                    </a>
+                                </li>
+                                <li role="menuitem">
+                                    <a href="#" class="topbar-message">
+                                        <img id="j_idt23" src="~/avalon/javax.faces.resource/images/avatar3.png" alt="" width="35" />
+                                        <span>About your invoice</span>
+                                    </a>
+                                </li>
+                                <li role="menuitem">
+                                    <a href="#" class="topbar-message">
+                                        <img id="j_idt25" src="~/avalon/javax.faces.resource/images/avatar2.png" alt="" width="35" />
+                                        <span>Meeting today at 10pm</span>
+                                    </a>
+                                </li>
+                                <li role="menuitem">
+                                    <a href="#" class="topbar-message">
+                                        <img id="j_idt27" src="{/avalon/javax.faces.resource/images/avatar4.png" alt="" width="35" />
+                                        <span>Out of office</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="@Url.Action("Profil", "Home", new { Model.id })">
+                                <i class="topbar-icon fa fa-user"></i>
+                                
+                                <span class="topbar-item-name">Profile</span>
+                                @Model.email
+                            </a>
+                            <ul class="layout-menu animated">
+                                <li role="menuitem">
+                                    <a href="#">
+                                        <i class="fa fa-fw fa-tasks"></i>
+                                        <span>Pending tasks</span>
+                                    </a>
+                                </li>
+                                <li role="menuitem">
+                                    <a href="#">
+                                        <i class="fa fa-fw fa-calendar-check-o"></i>
+                                        <span>Meeting today at 3pm</span>
+                                    </a>
+                                </li>
+                                <li role="menuitem">
+                                    <a href="#">
+                                        <i class="fa fa-fw fa-download"></i>
+                                        <span>Download documents</span>
+                                    </a>
+                                </li>
+                                <li role="menuitem">
+                                    <a href="#">
+                                        <i class="fa fa-fw fa-plane"></i>
+                                        <span>Book flight</span>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </li>
+                       
+                        <li class="search-item">
+                            <div class="topbar-search">
+                                <input type="text" placeholder="Search" />
+                                <i class="fa fa-search"></i>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <form id="menuform" name="menuform" method="post" action="/avalon/dashboard.xhtml" enctype="application/x-www-form-urlencoded">
+                <input type="hidden" name="menuform" value="menuform" />
+
+                <div class="layout-menu-container ">
+                    <div class="nano">
+                        <div class="nano-content menu-scroll-content">
+                            <div class="profile">
+                                <img id="j_idt12" src="~/avalon/javax.faces.resource/images/logo.png;" alt="" />
+                            </div>
+
+
+                            <ul id="menuform:j_idt34" class="layout-menu clearfix">
+                                <li id="menuform:om_dashboards" role="menuitem">
+                                <li id="menuform:am_customization" role="menuitem">
+                                    <a href="#" class="ripplelink">
+                                        <i class="fa fa-fw fa-bars"></i><span>Assurance</span><span class="ink animate"></span>
+                                    </a>
+                                </li>
+
+
+                                <li id="menuform:am_customization" role="menuitem">
+                                    <a href="#" class="ripplelink">
+                                        <i class="fa fa-percent"></i><span>Offre</span><span class="ink animate"></span>
+                                    </a>
+                                </li>
+                                <li id="menuform:am_customization" role="menuitem">
+                                    <a href="#" class="ripplelink">
+                                        <i class="fa fa-address-card-o"></i><span>Effectuer un contrat</span><span class="ink animate"></span>
+                                    </a>
+                                </li>
+                                <li id="menuform:am_customization" role="menuitem">
+                                    <a href="#" class="ripplelink">
+                                        <i class="fa fa-usd"></i><span>Comparer les prix</span><span class="ink animate"></span>
+                                    </a>
+                                </li>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div><input type="hidden" name="javax.faces.ViewState" id="j_id1:javax.faces.ViewState:0" value="-3784561211329516746:549984700397083665" autocomplete="off" />
+            </form>
+
+            <div class="layout-main">
+                <div class="dashboard">
+
+
+
+
+
+
+                </div>
+            </div>
+
+
+            <div class="layout-footer">
+                <span class="footer-text-left">
+                    <img id="j_idt147" src="~/avalon/javax.faces.resource/images/logo-dark.png" alt="" />
+                </span>
+                <span class="footer-text-right">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-github"></i></a>
+                </span>
+            </div>
+        </div><div id="j_idt150" style="width:32px;height:32px;position:fixed;right:7px;bottom:7px">
+            <div id="j_idt150_start" style="display:none">
+                <i class="fa fa-circle-o-notch fa-spin ajax-loader" aria-hidden="true"></i>
+            </div><div id="j_idt150_complete" style="display:none"></div>
+        </div>
+        <script id="j_idt150_s" type="text/javascript">$(function(){PrimeFaces.cw("AjaxStatus","widget_j_idt150",{id:"j_idt150"});});</script>
+    </body>
+

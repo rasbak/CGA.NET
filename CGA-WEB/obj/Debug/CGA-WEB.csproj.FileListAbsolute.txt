@@ -66,6 +66,7 @@ C:\Users\bakke\OneDrive\Documents\Visual Studio 2015\Projects\CGA\CGA-WEB\bin\Mi
 C:\Users\bakke\OneDrive\Documents\Visual Studio 2015\Projects\CGA\CGA-WEB\bin\Microsoft.AI.WindowsServer.xml
 C:\Users\bakke\OneDrive\Documents\Visual Studio 2015\Projects\CGA\CGA-WEB\bin\Microsoft.ApplicationInsights.xml
 C:\Users\bakke\OneDrive\Documents\Visual Studio 2015\Projects\CGA\CGA-WEB\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\bakke\OneDrive\Documents\Visual Studio 2015\Projects\CGA\CGA-WEB\bin\Newtonsoft.Json.xml
 C:\Users\bakke\OneDrive\Documents\Visual Studio 2015\Projects\CGA\CGA-WEB\bin\System.Web.Helpers.xml
 C:\Users\bakke\OneDrive\Documents\Visual Studio 2015\Projects\CGA\CGA-WEB\bin\System.Web.Mvc.xml
 C:\Users\bakke\OneDrive\Documents\Visual Studio 2015\Projects\CGA\CGA-WEB\bin\System.Web.Optimization.xml
@@ -74,7 +75,6 @@ C:\Users\bakke\OneDrive\Documents\Visual Studio 2015\Projects\CGA\CGA-WEB\bin\Sy
 C:\Users\bakke\OneDrive\Documents\Visual Studio 2015\Projects\CGA\CGA-WEB\bin\System.Web.WebPages.Deployment.xml
 C:\Users\bakke\OneDrive\Documents\Visual Studio 2015\Projects\CGA\CGA-WEB\bin\System.Web.WebPages.Razor.xml
 C:\Users\bakke\OneDrive\Documents\Visual Studio 2015\Projects\CGA\CGA-WEB\bin\Antlr3.Runtime.pdb
-C:\Users\bakke\OneDrive\Documents\Visual Studio 2015\Projects\CGA\CGA-WEB\bin\Newtonsoft.Json.xml
 C:\Users\bakke\OneDrive\Documents\Visual Studio 2015\Projects\CGA\CGA-WEB\bin\Microsoft.AspNet.Identity.Core.xml
 C:\Users\bakke\OneDrive\Documents\Visual Studio 2015\Projects\CGA\CGA-WEB\bin\Microsoft.AspNet.Identity.Owin.xml
 C:\Users\bakke\OneDrive\Documents\Visual Studio 2015\Projects\CGA\CGA-WEB\bin\Microsoft.AspNet.Identity.EntityFramework.xml
@@ -90,3 +90,6 @@ C:\Users\bakke\OneDrive\Documents\Visual Studio 2015\Projects\CGA\CGA-WEB\bin\Mi
 C:\Users\bakke\OneDrive\Documents\Visual Studio 2015\Projects\CGA\CGA-WEB\bin\Data.pdb
 C:\Users\bakke\OneDrive\Documents\Visual Studio 2015\Projects\CGA\CGA-WEB\obj\Debug\CGA-WEB.dll
 C:\Users\bakke\OneDrive\Documents\Visual Studio 2015\Projects\CGA\CGA-WEB\obj\Debug\CGA-WEB.pdb
+C:\Users\bakke\OneDrive\Documents\Visual Studio 2015\Projects\CGA\CGA-WEB\bin\System.Net.Http.Extensions.dll
+C:\Users\bakke\OneDrive\Documents\Visual Studio 2015\Projects\CGA\CGA-WEB\bin\System.Net.Http.Formatting.dll
+C:\Users\bakke\OneDrive\Documents\Visual Studio 2015\Projects\CGA\CGA-WEB\bin\System.Net.Http.Primitives.dll
