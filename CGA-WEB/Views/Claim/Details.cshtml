@@ -1,0 +1,74 @@
+﻿@model CGA.Models.ClaimModel
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+
+<h2>See More...</h2>
+
+
+    
+    <hr />
+    <div style="margin-top:100px ; float:left ; margin-bottom:100px ; margin-left:50px"   >
+        @*recuperer l'image*@
+        @{string path = "~/Content/Upload/" + Model.ImageUrl;}
+        @*enlever label for pour afficher seulement l'image*@
+        <img src="@Url.Content(path)" width="200" height="200" onchange="onFileSelected(event)" alt="Norway" width="1000" height="350" style="border-radius: 8px;" />
+    </div>
+<div>
+    <center>
+        <dl class="dl-horizontal" style="margin-top:50px">
+
+
+            <dt>
+                Accident Date : @Html.DisplayFor(model => model.accidentDate)
+            </dt>
+            <br />
+            <dt>
+                Localisation : @Html.DisplayFor(model => model.localisation)
+            </dt>
+            <br />
+            <dt>
+                About Witnesses : @Html.DisplayFor(model => model.namesAddressesPhonesWitnesses)
+            </dt>
+            <br />
+
+            <dt>
+                Cin of Insured 2 : @Html.DisplayFor(model => model.cinInsured2)
+            </dt>
+            <br />
+
+            <dt>
+                Status of your claim : @Html.DisplayFor(model => model.etat)
+            </dt>
+            <br />
+
+            <dt>
+                Contract Num : @Html.DisplayFor(model => model.contract_id)
+            </dt>
+            <br />
+
+            <dt>
+                Injured number : @Html.DisplayFor(model => model.injured)
+            </dt>
+            <br />
+            <dt>
+                Description : @Html.DisplayFor(model => model.otherObjectDamage)
+
+            </dt>
+            <br />
+
+            <dt>
+                Vehicles damage number : @Html.DisplayFor(model => model.vehiclesDamage)
+            </dt>
+
+        </dl>
+    </center>
+
+</div>
+
+<p>
+    @Html.ActionLink("My Claims", "Index")
+</p>

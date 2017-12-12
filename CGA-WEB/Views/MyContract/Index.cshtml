@@ -1,0 +1,58 @@
+﻿@model IEnumerable<Domaine.Entity.contract>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>My Contracts</h2>
+
+
+<table class="table table-striped">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.costContract)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.dateSending)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.endDate)
+        </th>
+       
+        <th>
+            @Html.DisplayNameFor(model => model.startDate)
+        </th>
+      
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.costContract)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.dateSending)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.endDate)
+        </td>
+      
+        <td>
+            @Html.DisplayFor(modelItem => item.startDate)
+        </td>
+      
+       
+        <td>
+            <a href="@Url.Action("Create", "Claim", new { id = item.id })" class="btn btn-warning">
+                Claim
+                <span class="glyphicon glyphicon-warning-sign" aria-hidden="true"></span>
+            </a>
+      
+            
+        
+        </td>
+    </tr>
+}
+
+</table>
